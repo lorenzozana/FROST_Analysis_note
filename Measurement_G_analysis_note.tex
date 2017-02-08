@@ -1,0 +1,70 @@
+\documentclass{article}
+\usepackage[affil-it]{authblk}
+\usepackage{graphicx}
+\usepackage[space]{grffile}
+\usepackage{latexsym}
+\usepackage{textcomp}
+\usepackage{longtable}
+\usepackage{multirow,booktabs}
+\usepackage{amsfonts,amsmath,amssymb}
+\usepackage{natbib}
+\usepackage{url}
+\usepackage{hyperref}
+\hypersetup{colorlinks=false,pdfborder={0 0 0}}
+% You can conditionalize code for latexml or normal latex using this.
+\newif\iflatexml\latexmlfalse
+\usepackage[utf8]{inputenc}
+\usepackage[greek,english]{babel}
+
+
+
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ }
+
+
+
+
+\begin{document}
+\include{title}
+
+
+\author{Lorenzo Zana}
+\affil{The University of Edinburgh}
+
+  
+\author{Daniel watts}
+\affil{The University of Edinburgh}
+  
+\author{Nicholas Zachariou}
+\affil{The University of Edinburgh}
+
+
+\date{\today}
+
+\maketitle
+
+\include{abstract}
+
+
+
+
+\tableofcontents
+
+\include{introduction}
+\include{experiment}
+\include{analysis}
+
+
+
+
+
+\bibliographystyle{plain}
+\bibliography{bibliography/biblio}
+
+\end{document}
+
