@@ -29,4 +29,16 @@ The butanol ($C_4 H_9OH$) target formed part of the FROST target system,  provid
 \subsection{Calculation of the Photon Beam Polarization}
 To extract the G observable, as well as the other polarisation observables measured in this experiment, it was necessary to know the degree of linear beam polarisation as accurately as possible. The orientation of the polarisation plane must also be established with accuracy and can be determined from the goniometer settings. The calculation of the degree of linear beam polarisation involves comparing the shape of the coherent Bremsstrahlung spectrum to a spectrum obtained from theoretical Bremsstrahlung calculations. An enhancement plot can be used to separate the coherent contribution from the incoherent contribution to the spectra. The enhancement plots are fit with a theoretical spectrum produced by the Analytical Bremsstrahlung (ANB) Calculation \cite{Natter_2003}\cite{Sabin_2010}. The ANB calculation takes into account 17 experimental parameters characterising the geometry of the radiator, collimator and photon beam. Several of these parameters can be measured experimentally (such as photon beam energy and beam spot size) whereas others (such as electron beam divergence on the radiator) are varied until a good agreement is obtained between the enhancement plot and the ANB calculation. These parameters are then extracted from the fit and are used to calculate the degree of polarisation per event as a function of photon energy. This information is then summarised in lookup tables \cite{Anderson_table}.
 
-\subsection{Cuts}
+\subsection{$\pi^+$ identification}
+Different cuts were applied on the data in order to select events with a single $\pi^+$.
+\begin{enumerate}
+  \item number of photons in the same RF bucket = 1
+  \item mass calculated from SC and TAG
+  \item charge of track = +1
+  \item The $\beta$ distribution was fitted for different momentum bins and a $\pm 3 \sigma$ cut was applied around the center of the distribution (see Fig. \ref{fig:beta_mom_pip} )
+\end{enumerate}
+\begin{figure}[htb]
+  \includegraphics[width=0.8\textwidth]{figures/pid_beta_mom_pip.pdf} \\
+  \caption{$\beta$ vs $momentum$ for selected $\pi^+$ tracks}
+  \label{fig:beta_mom_pip}
+\end{figure}
