@@ -29,16 +29,39 @@ The butanol ($C_4 H_9OH$) target formed part of the FROST target system,  provid
 \subsection{Calculation of the Photon Beam Polarization}
 To extract the G observable, as well as the other polarisation observables measured in this experiment, it was necessary to know the degree of linear beam polarisation as accurately as possible. The orientation of the polarisation plane must also be established with accuracy and can be determined from the goniometer settings. The calculation of the degree of linear beam polarisation involves comparing the shape of the coherent Bremsstrahlung spectrum to a spectrum obtained from theoretical Bremsstrahlung calculations. An enhancement plot can be used to separate the coherent contribution from the incoherent contribution to the spectra. The enhancement plots are fit with a theoretical spectrum produced by the Analytical Bremsstrahlung (ANB) Calculation \cite{Natter_2003}\cite{Sabin_2010}. The ANB calculation takes into account 17 experimental parameters characterising the geometry of the radiator, collimator and photon beam. Several of these parameters can be measured experimentally (such as photon beam energy and beam spot size) whereas others (such as electron beam divergence on the radiator) are varied until a good agreement is obtained between the enhancement plot and the ANB calculation. These parameters are then extracted from the fit and are used to calculate the degree of polarisation per event as a function of photon energy. This information is then summarised in lookup tables \cite{Anderson_table}.
 
+
+
 \subsection{$\pi^+$ identification}
 Different cuts were applied on the data in order to select events with a single $\pi^+$.
 \begin{enumerate}
   \item number of photons in the same RF bucket = 1
   \item mass calculated from SC and TAG
   \item charge of track = +1
-  \item The $\beta$ distribution was fitted for different momentum bins and a $\pm 3 \sigma$ cut was applied around the center of the distribution (see Fig. \ref{fig:beta_mom_pip} )
+  \item The $\beta$ distribution was fitted for different momentum bins and a $\pm 3 \sigma$ cut was applied around the center of the distribution (see Fig. \ref{fig:beta_mom_pip} ) for particles with momentum $p_{\pi^+} < 1.2GeV$. For higher momentum, the statistic was poorer for clearly defining a $\pm 3 \sigma$ cut and no contamination was clearly seen in this range after all the cuts.
+  \item  $\pm 3 \sigma$ cut around the $m^2$ of the pion
 \end{enumerate}
 \begin{figure}[htb]
   \includegraphics[width=0.8\textwidth]{figures/pid_beta_mom_pip.pdf} \\
   \caption{$\beta$ vs $momentum$ for selected $\pi^+$ tracks}
   \label{fig:beta_mom_pip}
 \end{figure}
+
+\subsubsection{Pion-Photon Timing}
+The time at which each event took place was now compared to the timing of the photon measured by the tagger. This allowed the reduction of background and accurate knowledge of the photon energy corresponding to each event as required for the missing mass calculation. The photons within the coherent peak were first selected using a simple cut on the photon energy range. The upper limit of this range was the coherent peak setting, the lower limit was the photon energy at which the beam polarisation dropped to 20\%. The arrival time of these photons at the event vertex, $t_\gamma$ , was then calculated using the tagger time, $t_{TAG}$, and the distance the photon travels from the radiator to the event vertex along the axis of the beamline, $z$ :
+$$
+t_\gamma = t_{TAG} + \frac{z}{c}
+$$
+The $\pi^+$ time, $t_\pi$, a the event vertex was then calculated as:
+$$
+t_\pi = t_{SC} - \frac{d}{c \beta_\pi}
+$$
+\begin{figure}[htb]
+  \includegraphics[width=0.8\textwidth]{figures/best_pion_photon_timing.pdf} \\
+  \caption{Best Pion-photon timing}
+  \label{fig:pion-photontiming}
+\end{figure}
+where $t_{SC}$ is the time recorded for the event by the Start Counter, $d$ is the distance between the event vertex and the hit position in the Start Counter  and $\beta_\pi = \sqrt{\frac{p^2}{m^2 + p^2}} $.  The event photon was defined as the photon whose vertex time is closest to the $\pi^+$ vertex time. Fig. \ref{fig:pion-photontiming} shows the time difference between these event photons and the $\pi^+$ vertex time, $\Delta t$ , with the majority of events having a time difference centred on zero. The smaller peaks to either side of the main peak correspond to photons from other beam buckets which were recorded during the time-window of the trigger for each event. These photons arising from neighbouring beam buckets were removed by setting the condition that 
+\begin{enumerate}
+\item $\Delta t$ must be within $1 ns$. 
+\item One single photon in this timing region per event
+\end{enumerate}
