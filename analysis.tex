@@ -1,5 +1,12 @@
 \section{Analysis procedure}
 This analysis note  will describe in detail the analysis procedure to select events belonging to the $\gamma (p,n) \pi^+$ channel from the g9a data set corresponding to the linearly polarised beam and longitudinally polarised target settings. Charged particles are identified with high efficiency in the CLAS detector ($\geq90\%$ \cite{Mecking2003}), so the analysis relies on detecting the $\pi^+$ and reconstructing the neutron from kinematics. The $\pi^+ n$ channel was first identified by filtering the data based on the invariant mass, beta and timing of each $\pi^+$ event. The neutron was then reconstructed using the missing mass technique. Neutral particles could only be detected with a much lower efficiency ($\sim5\%$ for neutrons with momenta $\sim 0.6 GeV/c$ increasing to $\sim 50\%$ for neutrons with momenta $\geq2 GeV/c$  \cite{Mecking2003}), which would significantly reduce the event sample. Once the channel of interest had been identified, the azimuthal ($\phi$) distribution of the $\pi^+$ in the CLAS detector was obtained, binned according to $\pi^+$ centre-of-mass energy, W, and the cosine of the centre-of-mass polar angle, $cos(\theta)$. The data set analysed for this thesis was divided into subsets for each photon beam (or coherent peak) energy setting (730, 930, 1100, 1300, 1500, 1700, 1900,2100 and 2300 MeV) and for each target setting (target polarisation parallel or anti-parallel to the beam), providing in total 18 subsets of data in the energy range 730-2300 MeV (W =1400-2280 MeV). At the binning stage, the data were  also further subdivided according to the specific linear photon beam polarisation setting i.e. whether the electric field vector of the photon beam was parallel to the floor (PARA), perpendicular to the floor (PERP) or unpolarised (AMO). Then I will describe the next stage of analysis, in which the G double-polarisation observable is extracted from the $\pi^+$ azimuthal distributions.
+\begin{figure}[htb]
+  \begin{center}
+    \includegraphics[width=0.6\textwidth]{figures/frost_reaction.pdf} \\
+    \caption{The $\gamma p \rightarrow \pi^+ n $ reaction in the center of mass frame. }
+    \label{fig:frost_diagram}
+  \end{center}
+\end{figure}
 
 \subsection{Data Reduction}
 The BOS files stored on the JLab tape silo contain all the data collected during JLab experiments so that they can be used for a wide range of analyses. Before the analysis of these data could begin a preliminary reduction of the g9a data set was carried out at JLab allowing the reduced files to be copied to the Edinburgh work disks and to also reduce the CPU time required for analysis. The CLAS analysis package, ROOTBEER \cite{rootbeer} was used for the preliminary data reduction process as well as for the subsequent analysis procedure described in this chapter. This is based on ROOT/C++ and interprets the bank structure of CLAS data. In this preliminary event selection two conditions determined the events which were retained:
@@ -12,15 +19,19 @@ The resulting files were then output as more compact ROOTDST (Data Summary Tape)
 \subsection{The g9a Targets}
 In g9a experiment there were three targets simultaneously in the beamline, as shown in Figure \ref{fig:target_draw}.
 \begin{figure}[htb]
-  \includegraphics[width=0.8\textwidth]{figures/targets_drawing.png} \\
-  \caption{Schematic diagram of the butanol, carbon and $CH_2$ targets in the beamline (not to scale) showing the position of their centres along the z axis. The butanol target was 2.67 mm thick, the carbon target was 1.49 mm thick and the $CH_2$ target was 3.45 mm thick. }
-  \label{fig:target_draw}
-\end{figure}
+  \begin{center}
+    \includegraphics[width=0.6\textwidth]{figures/targets_drawing.png} \\
+    \caption{Schematic diagram of the butanol, carbon and $CH_2$ targets in the beamline (not to scale) showing the position of their centres along the z axis. The butanol target was 2.67 mm thick, the carbon target was 1.49 mm thick and the $CH_2$ target was 3.45 mm thick. }
+    \label{fig:target_draw}
+    \end{center}
+  \end{figure}
 The butanol ($C_4 H_9OH$) target formed part of the FROST target system,  providing polarised protons. As butanol contains unpolarised carbon and oxygen atoms as well as polarised hydrogen, analysis of events originating within the carbon target allowed assessment of this unpolarised background contribution. The $CH_2$ target provides unpolarised protons, another useful cross-check for the analysis. Events from each of the three targets were selected by making a cut on the z-vertex position of each event to originate within one of the three targets. The z-vertex position is defined as the point of intersection of the beamline axis with the particle’s trajectory extrapolated back from the drift chambers. Figure \ref{fig:target_pos} shows the z-vertex position of all positive particle events along with the cuts made on the target positions as follows: -2.67 cm $\leq$ z $\leq$ 2.67 cm for the butanol target, 5.0 cm $\leq$ z $\leq$ 7.0 cm for the carbon target and 15.0 cm $\leq$ z $\leq$ 17.0 cm for the $CH_2$ target.
 \begin{figure}[htb]
-  \includegraphics[width=0.8\textwidth]{figures/targets_pos.png} \\
-  \caption{Z-vertex distribution of all positively charged particle events. The vertical red lines show the cuts made on the target positions as described in the text.}
-  \label{fig:target_pos}
+  \begin{center}
+    \includegraphics[width=0.6\textwidth]{figures/targets_pos.png} \\
+    \caption{Z-vertex distribution of all positively charged particle events. The vertical red lines show the cuts made on the target positions as described in the text.}
+    \label{fig:target_pos}
+  \end{center}
 \end{figure}
 
 
@@ -40,9 +51,11 @@ Different cuts were applied on the data in order to select events with a single 
   \item  $\pm 3 \sigma$ cut around the $m^2$ of the pion
 \end{enumerate}
 \begin{figure}[htb]
-  \includegraphics[width=0.8\textwidth]{figures/pid_beta_mom_pip.pdf} \\
-  \caption{$\beta$ vs $momentum$ for selected $\pi^+$ tracks}
-  \label{fig:beta_mom_pip}
+  \begin{center}
+    \includegraphics[width=0.6\textwidth]{figures/pid_beta_mom_pip.pdf} \\
+    \caption{$\beta$ vs $momentum$ for selected $\pi^+$ tracks}
+    \label{fig:beta_mom_pip}
+  \end{center}
 \end{figure}
 
 \subsubsection{Pion-Photon Timing}
@@ -55,12 +68,34 @@ $$
 t_\pi = t_{SC} - \frac{d}{c \beta_\pi}
 $$
 \begin{figure}[htb]
-  \includegraphics[width=0.8\textwidth]{figures/best_pion_photon_timing.pdf} \\
-  \caption{Best Pion-photon timing}
-  \label{fig:pion-photontiming}
+  \begin{center}
+    \begin{tabular}{lr}
+      \begin{minipage}{0.5\textwidth}
+        \begin{flushleft}
+          \includegraphics[width=0.95\textwidth]{figures/best_pion_photon_timing.pdf} \\
+          \caption{Best Pion-photon timing}
+          \label{fig:pion-photontiming}
+        \end{flushleft}
+        \end{minipage} &
+        \begin{minipage}{0.5\textwidth}
+        \begin{flushright}
+          \includegraphics[width=0.95\textwidth]{figures/best_pion_photon_timing_vs_p.pdf} \\
+          \caption{Best Pion-photon timing vs $\pi^+$ momentum}
+          \label{fig:pion-photontiming_vsp}
+        \end{flushright}
+        \end{minipage}
+    \end{tabular}
+  \end{center}
 \end{figure}
 where $t_{SC}$ is the time recorded for the event by the Start Counter, $d$ is the distance between the event vertex and the hit position in the Start Counter  and $\beta_\pi = \sqrt{\frac{p^2}{m^2 + p^2}} $.  The event photon was defined as the photon whose vertex time is closest to the $\pi^+$ vertex time. Fig. \ref{fig:pion-photontiming} shows the time difference between these event photons and the $\pi^+$ vertex time, $\Delta t$ , with the majority of events having a time difference centred on zero. The smaller peaks to either side of the main peak correspond to photons from other beam buckets which were recorded during the time-window of the trigger for each event. These photons arising from neighbouring beam buckets were removed by setting the condition that 
 \begin{enumerate}
 \item $\Delta t$ must be within $1 ns$. 
 \item One single photon in this timing region per event
 \end{enumerate}
+
+
+\subsubsection{Energy Loss Corrections}
+
+The four-momentum of the $\pi^+$ is determined, in part, by the three-momentum obtained from the $\pi^+$ tracks in the drift chambers. This measured momentum does not take into account the energy losses of the particles as they pass through the target cell walls, mixing chamber and holding coil as well as the start counter before entering the drift chambers. As a result, the momentum of the $\pi^+$ can be up to $\sim 0.02 GeV/c$ higher than that measured, as shown in Figure 8.8.
+The data were corrected for this loss in momentum using the ELOSS package [147] which was updated for the g9a. This is the standard energy-loss correction software for CLAS experiments and can be applied to any charged particle with a mass greater than that of an electron. The target geometry, event vertex position and particle four-momentum is input into ELOSS which then tracks back the flight path of the particle from the point at which it entered the Region 1 Drift Chambers to the event vertex. The path length of the particle in each of the materials it traverses is obtained allowing the energy lost in each material and hence the momentum lost by the particle to be calculated. The mass and energy of the $\pi^+$ were now recalculated using the energy-loss corrected values of momentum, the PDG value of $\pi^+$ mass and the measured value of beta (Equations 8.3 and 8.4). A new energy-loss corrected four-vector was therefore created for the $\pi^+$ which was then applied in the missing mass calculation described in the next section.
+
