@@ -98,4 +98,12 @@ where $t_{SC}$ is the time recorded for the event by the Start Counter, $d$ is t
 
 The four-momentum of the $\pi^+$ is determined, in part, by the three-momentum obtained from the $\pi^+$ tracks in the drift chambers. This measured momentum does not take into account the energy losses of the particles as they pass through the target cell walls, mixing chamber and holding coil as well as the start counter before entering the drift chambers. As a result, the momentum of the $\pi^+$ can be up to $\sim 0.02 GeV/c$ higher than that measured, as shown in Figure 8.8.
 The data were corrected for this loss in momentum using the ELOSS package [147] which was updated for the g9a. This is the standard energy-loss correction software for CLAS experiments and can be applied to any charged particle with a mass greater than that of an electron. The target geometry, event vertex position and particle four-momentum is input into ELOSS which then tracks back the flight path of the particle from the point at which it entered the Region 1 Drift Chambers to the event vertex. The path length of the particle in each of the materials it traverses is obtained allowing the energy lost in each material and hence the momentum lost by the particle to be calculated. The mass and energy of the $\pi^+$ were now recalculated using the energy-loss corrected values of momentum, the PDG value of $\pi^+$ mass and the measured value of beta (Equations 8.3 and 8.4). A new energy-loss corrected four-vector was therefore created for the $\pi^+$ which was then applied in the missing mass calculation described in the next section.
+\begin{figure}[htb]
+  \begin{center}
+    \includegraphics[width=0.6\textwidth]{figures/eloss_comp.pdf} \\
+    \caption{Reconstructed Mass of the neutron before (red) and after eloss (blue)}
+    \label{fig:eloss_comp}
+  \end{center}
+\end{figure}
+
 
