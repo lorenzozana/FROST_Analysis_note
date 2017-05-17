@@ -39,6 +39,20 @@ N_{\parallel -} = \frac{F_{\parallel}}{F_{AMO}} \left( 1 + P_{\gamma \parallel}c
 N_{\perp +} = \frac{F_{\perp}}{F_{AMO}} \left( 1 + P_{\gamma \perp}cos(2(\phi-\phi_0)) + P_{\gamma \perp} P_z sin(2(\phi-\phi_0)) \right) \\
 N_{\perp -} = \frac{F_{\perp}}{F_{AMO}} \left( 1 + P_{\gamma \perp}cos(2(\phi-\phi_0)) - P_{\gamma \perp} P_z sin(2(\phi-\phi_0)) \right) \\
 \end{eqnarray}
+\begin{figure}[htb]
+  \begin{center}
+    \subfloat[][Asymmetry for $1.71GeV \leq E_{CM} < 1.74GeV$ and \\$0.4 \leq cos(\theta_{CM}) < 0.6$  ] {
+      \includegraphics[width=0.5\textwidth]{figures/G_tgpol_effect.pdf} 
+      \label{fig:GTgpol_theta1}
+    }
+    \subfloat[][Asymmetry  $1.54GeV \leq E_{CM} < 1.57GeV$ and \\$-0.6 \leq cos(\theta_{CM}) < -0.4$] {
+      \includegraphics[width=0.5\textwidth]{figures/G_tgpol_effect2.pdf}
+    \label{fig:GTgpol_theta2}
+    } 
+    \caption{The Asymmetry histogram with the fit is plotted for the two different target polarization. One can see the simmetry of the shift from the nominal position in the center ($\phi = 0$).  One can see that, still after the weighting with the Amorphous flux, there is still some effect due to lack of acceptance in the part separating the 6 sectors of CLAS}
+  \end{center}
+\end{figure}
+
 These distributions where fitted with a function with 4 parameters ($ a,b,c,d $) :
 \begin{equation} \label{eqn:fit_flux}
 f(\phi) = a \{ 1 + b\, cos[2 (\phi - c) ]  + d\, sin[2(\phi - c)] \} 
@@ -56,6 +70,14 @@ As the four vectors of the incident photon, target proton and outgoing pion were
 $$
 \gamma \, + \,  p \, \rightarrow \, \pi^+ \, + \, X
 $$
+\begin{figure}[htb]
+  \begin{center}
+    \includegraphics[width=0.6\textwidth]{figures/neutron_missingmass.pdf} \\
+    \caption{Mass distribution obtained from the reconstructed neutron four-vector, showing a sharp peak corresponding to the reconstructed neutron and
+a broad peak to the right of this corresponding mainly to two-pion production channels. }
+    \label{fig:frost_neutronmissing_ex}
+  \end{center}
+\end{figure}
 assuming momentum is conserved in this reaction. Here X can represent the neutron, other neutral particles, or combinations of positively and negatively charged particles such as $\pi^+ , \pi^-$. Figure --- shows the missing mass distribution obtained from the reconstructed neutral four-vector, showing a sharp peak corresponding to the missing neutron mass and a broad peak to the right of this corresponding to other possible channels such as multi-pion production. This plot also shows background contributions due to photon interactions with the carbon and oxygen atoms in the butanol target.
 A mass cut was performed to select the neutron and hence the $\pi + n$ events of interest. The width of the neutron-mass squared cut was determined by making a rough subtraction of the carbon and oxygen background using the missing mass distribution obtained from the carbon target data. The missing-mass squared distribution obtained from the carbon target was first scaled to the butanol missing-mass distribution. To obtain the scale factor, the butanol missing mass spectrum was divided by the carbon missing mass spectrum and fit with a Gaussian function in the region of the neutron peak and a zeroth order polynomial in the region to the left of this peak as shown in Figure ---.
 As the carbon and butanol targets were very close together in the beamline and could not be fully resolved in the z-vertex distribution spectrum, some events within the carbon z-vertex cuts will have originated from polarised protons within the butanol target.
