@@ -1,16 +1,16 @@
 \section{Extraction of the G Double-Polarization Observable}
 The Cross section for this reaction, considering the target linear Polarization along the photon beam direction $P_z$, and the Polarization of the photon beam ($P_{\parallel}$ (Electric field parallel to the floor) and $P_{\perp}$ (Electric field perpendicular to the floor)), can be written as:
 \begin{equation}
-\frac{d\sigma}{d\Omega} = \left(\frac{d\sigma}{d\Omega}\right)_{UNPOL}  \left( 1 + P_{\gamma}cos(2\phi) + P_{\gamma} P_z sin(2\phi) \right)
+\frac{d\sigma}{d\Omega} = \left(\frac{d\sigma}{d\Omega}\right)_{UNPOL}  \left( 1 + P_{\gamma}\Sigma cos(2\phi) + P_{\gamma} P_z G sin(2\phi) \right)
 \end{equation}
 
 During the g9a run period all the possible combinations of different polarizations where measured, reaching the full configuration
 
 \begin{eqnarray}
-\left(\frac{d\sigma}{d\Omega}\right)_{\parallel +} = \left(\frac{d\sigma}{d\Omega}\right)_{UNPOL}  \left( 1 + P_{\gamma \parallel}cos(2\phi) + P_{\gamma \parallel} P_z sin(2\phi) \right) \\
-\left(\frac{d\sigma}{d\Omega}\right)_{\parallel -} = \left(\frac{d\sigma}{d\Omega}\right)_{UNPOL}  \left( 1 + P_{\gamma \parallel}cos(2\phi) - P_{\gamma \parallel} P_z sin(2\phi) \right) \\
-\left(\frac{d\sigma}{d\Omega}\right)_{\perp +} = \left(\frac{d\sigma}{d\Omega}\right)_{UNPOL}  \left( 1 + P_{\gamma \perp}cos(2\phi) + P_{\gamma \perp} P_z sin(2\phi) \right) \\
-\left(\frac{d\sigma}{d\Omega}\right)_{\perp -} = \left(\frac{d\sigma}{d\Omega}\right)_{UNPOL}  \left( 1 + P_{\gamma \perp}cos(2\phi) - P_{\gamma \perp} P_z sin(2\phi) \right)
+\left(\frac{d\sigma}{d\Omega}\right)_{\parallel +} = \left(\frac{d\sigma}{d\Omega}\right)_{UNPOL}  \left( 1 + P_{\gamma \parallel}\Sigma cos(2\phi) + P_{\gamma \parallel} P_{+z} G sin(2\phi) \right) \\
+\left(\frac{d\sigma}{d\Omega}\right)_{\parallel -} = \left(\frac{d\sigma}{d\Omega}\right)_{UNPOL}  \left( 1 + P_{\gamma \parallel}\Sigma cos(2\phi) - P_{\gamma \parallel} P_{-z} G sin(2\phi) \right) \\
+\left(\frac{d\sigma}{d\Omega}\right)_{\perp +} = \left(\frac{d\sigma}{d\Omega}\right)_{UNPOL}  \left( 1 - P_{\gamma \perp}\Sigma cos(2\phi) - P_{\gamma \perp} P_{+z} G sin(2\phi) \right) \\
+\left(\frac{d\sigma}{d\Omega}\right)_{\perp -} = \left(\frac{d\sigma}{d\Omega}\right)_{UNPOL}  \left( 1 - P_{\gamma \perp}\Sigma cos(2\phi) + P_{\gamma \perp} P_{-z} G sin(2\phi) \right)
 \end{eqnarray}
 An asymmetry between these configurations will permit to extract the desired parameter $G$. In order to normalize these measurement before calculating the asymmetry, the cross section was also calculated with the same configurations for the Polarized target, but with an amorphous crystal (Carbon), in order to create an unpolirized photon beam. This will also remove effects due to the acceptance of the detector. 
 
@@ -34,10 +34,10 @@ Considering now as:
 \end{itemize}
 
 \begin{eqnarray}
-N_{\parallel +} = \frac{F_{\parallel}}{F_{AMO}} \left( 1 + P_{\gamma \parallel}cos(2(\phi-\phi_0)) + P_{\gamma \parallel} P_z sin(2(\phi-\phi_0)) \right) \\
-N_{\parallel -} = \frac{F_{\parallel}}{F_{AMO}} \left( 1 + P_{\gamma \parallel}cos(2(\phi-\phi_0)) - P_{\gamma \parallel} P_z sin(2(\phi-\phi_0)) \right) \\
-N_{\perp +} = \frac{F_{\perp}}{F_{AMO}} \left( 1 + P_{\gamma \perp}cos(2(\phi-\phi_0)) + P_{\gamma \perp} P_z sin(2(\phi-\phi_0)) \right) \\
-N_{\perp -} = \frac{F_{\perp}}{F_{AMO}} \left( 1 + P_{\gamma \perp}cos(2(\phi-\phi_0)) - P_{\gamma \perp} P_z sin(2(\phi-\phi_0)) \right) \\
+N_{\parallel +} = \frac{F_{\parallel}}{F_{AMO}} \left( 1 + P_{\gamma \parallel}\Sigma cos(2(\phi-\phi_0)) + P_{\gamma \parallel} P_{+z} G sin(2(\phi-\phi_0)) \right) \\
+N_{\parallel -} = \frac{F_{\parallel}}{F_{AMO}} \left( 1 + P_{\gamma \parallel}\Sigma cos(2(\phi-\phi_0)) - P_{\gamma \parallel} P_{-z} G sin(2(\phi-\phi_0)) \right) \\
+N_{\perp +} = \frac{F_{\perp}}{F_{AMO}} \left( 1 - P_{\gamma \perp}\Sigma cos(2(\phi-\phi_0)) - P_{\gamma \perp} P_{+z} G sin(2(\phi-\phi_0)) \right) \\
+N_{\perp -} = \frac{F_{\perp}}{F_{AMO}} \left( 1 - P_{\gamma \perp}\Sigma cos(2(\phi-\phi_0)) + P_{\gamma \perp} P_{-z} G sin(2(\phi-\phi_0)) \right) \\
 \end{eqnarray}
 \begin{figure}[htb]
   \begin{center}
