@@ -1,6 +1,8 @@
 \documentclass{article}
 \usepackage[affil-it]{authblk}
 \usepackage{graphicx}
+\usepackage{hyperref}
+\hypersetup{colorlinks=false,pdfborder={0 0 0}}
 \usepackage{subfig}
 \usepackage[space]{grffile}
 \usepackage{latexsym}
@@ -11,14 +13,39 @@
 \usepackage{natbib}
 \usepackage{url}
 \usepackage{enumitem}
-\usepackage{hyperref}
-\hypersetup{colorlinks=false,pdfborder={0 0 0}}
 % You can conditionalize code for latexml or normal latex using this.
 \newif\iflatexml\latexmlfalse
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
-
-
+\renewcommand*\thesubfigure{\arabic{subfigure}} 
+\usepackage{placeins}
+\usepackage{listings}
+\usepackage{color}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+ 
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+ 
+\lstset{style=mystyle}
 
 \usepackage{geometry}
  \geometry{
