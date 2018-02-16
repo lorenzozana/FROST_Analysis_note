@@ -305,7 +305,7 @@ Target polarization is plotted vs $E_{CMS}$(W) for different $cos(\theta_{CM})$ 
 \FloatBarrier
 \subsection{Simulation Code}
 \label{app:simcode}
-Simulation code used in order to test the extraction of the varibles (See chapted \ref{ch:sys_corr}). After different effects were evaluated, a faster version was used in order to address the systematic shifts induced by the method of extraction of the variables. This was needed in order to speed up the simulation time, since were used 100 simulations for each of the 28 different statistics, the 10 different G and 10 different $\Sigma$ investigated.
+Simulation code used in order to test the extraction of the variables (See chapted \ref{ch:sys_corr}). After different effects were evaluated, a faster version was used in order to address the systematic shifts induced by the method of extraction of the variables. This was needed in order to speed up the simulation time, since were used 100 simulations for each of the 28 different statistics, the 11 different G (letting it vary by 0.2 between -1 and 1) and 11 different $\Sigma$ investigated (a total 338800 simulations).
 \begin{lstlisting}[language=C++]
 #include "TH1F.h"
 #include "TRandom2.h"

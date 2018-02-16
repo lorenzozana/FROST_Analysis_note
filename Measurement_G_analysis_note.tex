@@ -3,7 +3,7 @@
 \usepackage{graphicx}
 \usepackage{hyperref}
 \hypersetup{colorlinks=false,pdfborder={0 0 0}}
-\usepackage{subfig}
+\usepackage[subrefformat=parens,labelformat=parens]{subfig}
 \usepackage[space]{grffile}
 \usepackage{latexsym}
 \usepackage{textcomp}
@@ -17,7 +17,10 @@
 \newif\iflatexml\latexmlfalse
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
-\renewcommand*\thesubfigure{\arabic{subfigure}} 
+%\renewcommand*\thesubfloatfigure{\themainfigure(\arabic{subfloatfigure})}
+\renewcommand*\thesubfigure{(\arabic{subfigure})}
+\captionsetup[subfigure]{labelformat=simple,labelsep=colon,listofformat=subsimple}
+\captionsetup{lofdepth=2}
 \usepackage{placeins}
 \usepackage{listings}
 \usepackage{color}
