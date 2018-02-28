@@ -1,15 +1,11 @@
 \section{Results}
-Results are presented as a function of $E_{CMS}$ for different $cos(\theta)$ bins and vice-versa. Systematic effects on the extraction of the Photon Polarization have been checked letting varying the selection of the allowed range around the nominal value of $>50\%$ (This was done in order to see how the selection of this range was affecting the result):
-\begin{align}
-  P_\gamma &> 45 \% \\
-  P_\gamma &> 50 \% \\
-  P_\gamma &> 55 \% 
-\end{align}
-If a fluctuation of the extracted value of G was present, an error was added (showed in RED in the next plots).
+This section will present the experimental results for G and $\Sigma$ using the fit method described in section \ref{ch:extract_G}. 
+Results are presented as a function of $E_{CMS}$ for different $cos(\theta)$ bins and vice-versa. 
+In the following plots, as described in chapter \ref{ch:50pc_pol}, for each data point, in red is shown the possible fluctuation of varying the limit of 50\% for the photon polarization. 
 
 
-\subsection{G vs \texorpdfstring{$E_{CMS}$}{E-CMS} for different \texorpdfstring{$cos(\theta)$}{cos(theta)} bins}
-Different color bands have been used in order to show different configurations used (summarized in Table \ref{table:g9a_conf_color}). One can see some overlapping for different configurations around $E_{CMS} \sim 2 GeV$. One can check the consistency of the extraction of G through different configurations from these overlapped measurements. 
+\subsection{G vs \texorpdfstring{$E_{CMS}$}{E-CMS} for different \texorpdfstring{$cos(\theta)$}{cos(theta)} bins}\label{ch:result_W}
+Different color bands have been used in order to show different coherent edge settings used in the data (summarized in Table \ref{table:g9a_conf_color}). One can see some overlapping in the photon energies (and therefore W) covered by different coherent edge settings. e.g.  around $E_{CMS} \sim 2 GeV$. One can check the consistency of the extraction of G from these overlapped measurements. Together with the data are plotted current MAID2007 \cite{MAID_2007} (blue line)  and SAID \cite{PhysRevC.86.015202} (red line) predictions, before this data is submitted.
 \begin{table}[h]
   \begin{center}
     \begin{tabular}{ |l||l|l||l|l||l|l||l|l||}
@@ -50,25 +46,25 @@ Different color bands have been used in order to show different configurations u
       \hline
     \end{tabular}
   \end{center}
-  \caption{g9a Run period: Different electron beam energies ($E_{beam}$) were used with different Energies for the Coherent Edge Polarization ($Coh_{Edge}$). The photon energy profile has a direct correlation with the Center of Mass Energy ($E_{CMS}$), which was then binned in a range that assured enough statistics with a Beam Polarization $>50\%$ in order to avoid strong systematic error in the evaluation of the beam polarization. The range used in each configuration ($E_{CMS}^{min} $ ,  $E_{CMS}^{max}$), the number of bins (n) and the size of each bin is also shown in this table.}
+  \caption{g9a Run period: Different electron beam energies ($E_{beam}$) were used with different Energies for the Coherent Edge Polarization ($Coh_{Edge}$). The photon energy profile has a direct correlation with the Center of Mass Energy ($E_{CMS}$), which has a minimum and maximum limit chosen in order to reduce systematic errors in the evaluation of the beam polarization (with a Beam Polarization $>50\%$). The range used in each configuration ($E_{CMS}^{min} $ ,  $E_{CMS}^{max}$), the number of bins (n) and the size of each bin is also shown in this table.}
   \label{table:g9a_conf_color}
 \end{table}
 
 \begin{figure}[htb]
   \begin{center}
-    \subfloat[][G vs W $ -1 <= cos(\theta_{CM})<-0.8$ ] {
+    \subfloat[][G vs W $ -1 <= cos(\theta_{CM})<-0.8$ (\color{blue}{MAID} \color{red}{SAID})] {
       \includegraphics[width=0.5\textwidth]{figures/G_plots/comp_system_0.png} 
       \label{fig:GvsW_theta1}
     }
-    \subfloat[][G vs W $ -0.8 <= cos(\theta_{CM})<-0.6$ ] {
+    \subfloat[][G vs W $ -0.8 <= cos(\theta_{CM})<-0.6$ (\color{blue}{MAID} \color{red}{SAID})] {
       \includegraphics[width=0.5\textwidth]{figures/G_plots/comp_system_1.png}
     \label{fig:GvsW_theta2}
     } \\
-    \subfloat[][G vs W $ -0.6 <= cos(\theta_{CM})<-0.4$ ] {
+    \subfloat[][G vs W $ -0.6 <= cos(\theta_{CM})<-0.4$ (\color{blue}{MAID} \color{red}{SAID})] {
     \includegraphics[width=0.5\textwidth]{figures/G_plots/comp_system_2.png}
     \label{fig:GvsW_theta3}
     }
-    \subfloat[][G vs W $ -0.4 <= cos(\theta_{CM})<-0.2$ ] {
+    \subfloat[][G vs W $ -0.4 <= cos(\theta_{CM})<-0.2$ (\color{blue}{MAID} \color{red}{SAID})] {
       \includegraphics[width=0.5\textwidth]{figures/G_plots/comp_system_3.png}
       \label{fig:GvsW_theta4}
     }
@@ -77,19 +73,19 @@ Different color bands have been used in order to show different configurations u
 \begin{figure}[htb]
 \ContinuedFloat
   \begin{center} 
-    \subfloat[][G vs W $ -0.2 <= cos(\theta_{CM})<0.0$ ] {
+    \subfloat[][G vs W $ -0.2 <= cos(\theta_{CM})<0.0$ (\color{blue}{MAID} \color{red}{SAID})] {
       \includegraphics[width=0.5\textwidth]{figures/G_plots/comp_system_4.png}
       \label{fig:GvsW_theta5}
     }
-    \subfloat[][G vs W $ 0.0 <= cos(\theta_{CM})<0.2$ ] {
+    \subfloat[][G vs W $ 0.0 <= cos(\theta_{CM})<0.2$ (\color{blue}{MAID} \color{red}{SAID})] {
       \includegraphics[width=0.5\textwidth]{figures/G_plots/comp_system_5.png}
       \label{fig:GvsW_theta6}
     } \\    
-    \subfloat[][G vs W $ 0.2 <= cos(\theta_{CM})<0.4$ ] {
+    \subfloat[][G vs W $ 0.2 <= cos(\theta_{CM})<0.4$ (\color{blue}{MAID} \color{red}{SAID})] {
       \includegraphics[width=0.5\textwidth]{figures/G_plots/comp_system_6.png}
       \label{fig:GvsW_theta7}
     }
-    \subfloat[][G vs W $ 0.4 <= cos(\theta_{CM})<0.6$ ] {
+    \subfloat[][G vs W $ 0.4 <= cos(\theta_{CM})<0.6$ (\color{blue}{MAID} \color{red}{SAID})] {
       \includegraphics[width=0.5\textwidth]{figures/G_plots/comp_system_7.png}
       \label{fig:GvsW_theta8}
     }
@@ -98,11 +94,11 @@ Different color bands have been used in order to show different configurations u
 \begin{figure}[htb]
 \ContinuedFloat
   \begin{center} 
-    \subfloat[][G vs W $ 0.6 <= cos(\theta_{CM})<0.8$ ] {
+    \subfloat[][G vs W $ 0.6 <= cos(\theta_{CM})<0.8$ (\color{blue}{MAID} \color{red}{SAID})] {
       \includegraphics[width=0.5\textwidth]{figures/G_plots/comp_system_8.png}
       \label{fig:GvsW_theta9}
     }
-    \subfloat[][G vs W $ 0.8 <= cos(\theta_{CM})<1.0$ ] {
+    \subfloat[][G vs W $ 0.8 <= cos(\theta_{CM})<1.0$ (\color{blue}{MAID} \color{red}{SAID})] {
       \includegraphics[width=0.5\textwidth]{figures/G_plots/comp_system_9.png}
       \label{fig:GvsW_theta10}
     }
@@ -111,7 +107,7 @@ Different color bands have been used in order to show different configurations u
 
 \FloatBarrier
 
-\subsection{G vs  \texorpdfstring{$\theta_{CM}$}{theta-CM}  for different \texorpdfstring{$E_{CMS}$}{E-CMS} bins}
+\subsection{G vs  \texorpdfstring{$\theta_{CM}$}{theta-CM}  for different \texorpdfstring{$E_{CMS}$}{E-CMS} bins}\label{ch:result_th}
 G is plotted for different $E_{CMS}$ as a function of $\theta_{CM}$. Bins have been chosen of equal size in $cos(\theta_{CM})$. 
 
 \begin{figure}[htb]
@@ -244,3 +240,10 @@ G is plotted for different $E_{CMS}$ as a function of $\theta_{CM}$. Bins have b
     }
   \end{center}
 \end{figure}
+
+
+
+
+\subsection{Discussion}
+
+The g9a FROST experiment has enabled G and $\Sigma$ to be extracts with good statistical accuracy in the range W=1.4GeV to 2.29GeV and $cos(\theta_{CM})$ -1 to 1.  This is the first measuremenmt of G over a wide W and theta range for the $\pi^+ N$ photo-production channel. The data will provide valuable new constraints on partial wave analyses to constrain the N* spectrum. Distributing the data to the PWA groups and investigating the effect on resonance properties will be the next step once the data analysis has been approved. 
