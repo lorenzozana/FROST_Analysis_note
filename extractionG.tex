@@ -18,7 +18,7 @@ The construction of asymmetry observables between these combinations allows the 
 
 \subsection{Calculation of the flux on target, F} \label{ch:flux}
 During the experiment, every effort was made to collect the same amount of data for all four possible combinations of (polarised beam)-(polarised target) settings. In practice, however, the flux incident on the target for the PARA and PERP beam settings was not equal and the $\pi^+$ azimuthal distributions (See Fig. \ref{fig:frost_PARA_ex} for an example) had to be scaled to each other before any further analysis.
-\begin{figure}[htb]
+\begin{figure}[H]
   \begin{center}
     \includegraphics[width=0.6\textwidth]{figures/phi_PARA.pdf} \\
     \caption{$\phi$ distribution for PARA events for a single energy bin and $cos(\theta_{CM})$ bin. }
@@ -61,7 +61,7 @@ As the four vectors of the incident photon, target proton and outgoing pion were
 $$
 \gamma \, + \,  p \, \rightarrow \, \pi^+ \, + \, X
 $$
-\begin{figure}[htb]
+\begin{figure}[H]
   \begin{center}
     \includegraphics[width=0.6\textwidth]{figures/neutron_missingmass.pdf} \\
     \caption{Mass distribution obtained from the reconstructed neutron four-vector, displaying a sharp peak corresponding to the reconstructed neutron and
@@ -69,7 +69,7 @@ a broad peak to the right of this corresponding mainly to two-pion production ch
     \label{fig:frost_neutronmissing_ex}
   \end{center}
 \end{figure}
-\begin{figure}[htb]
+\begin{figure}[H]
   \begin{center}
     \includegraphics[width=0.6\textwidth]{figures/scaling_dilutionfactor.pdf} \\
     \caption{Fitting of the ratio of butanol missing mass distribution with carbon missing mass distribution. The function used is a Gaussian plus a zeroth order polynomial: The zeroth order polynomial will give the constant scaling factor for the carbon target missing mass distribution. }
@@ -86,7 +86,7 @@ For the butanol data the statistics for each bin were high enough to derive the 
 
 Figs \ref{fig:dilution_comp_E0} to \ref{fig:dilution_comp_E3} show examples for.a range of photon energy bins  of butanol missingmass spectra  compared to the scaled carbon data, along with the fit (red line) used to establish the carbon yield $N_C$. The extracted dilution factors (obtained from equation \ref{eqn:dil_factor}) are presented as a function of W for a single $cos(\theta_{CM})$ bin in Fig. \ref{fig:dilution_fit_theta6}.
  
-\begin{figure}[htb]
+\begin{figure}[H]
   \begin{center}
     \subfloat[][Carbon missing mass spectrum (X(GeV)) vs MVRT.Z position (Y(cm))] {
       \includegraphics[width=0.64\textwidth]{figures/mvrt_cut_dilution_factor_1_1.pdf} 
@@ -103,7 +103,7 @@ Figs \ref{fig:dilution_comp_E0} to \ref{fig:dilution_comp_E3} show examples for.
     \label{fig:dilution_factor_z3}
     } 
 
-    \caption{The missing mass spectrum is plotted for the carbon target as a function of the reconstructed vertex from the MVRT bank. The spectrum is expected to be independent of the reconstructed Z, but a strong hydrogen contamination is shown for higher Z values. The added Hydrogen spectrum as shown in Fig. \ref{fig:dilution_factor_z3} is compared and consistent with the butanol hydrogen spectrum for the same angle and energy range. Subtracting the hydrogen contamination peak from the carbon will be strongly dependent on the statistic in the bin and on the difference in the shape of background and contamination. A safer approach has been used applying a Z cut to just consider the part of the missing mass spectrum that does not show strong hydrogen contamination. A second fit is then applied to this sample (See Fig. \ref{fig:dilution_mass_zcut}) In order to remove the last part of the hydrogen contamination (probably mainly due to poor vertex reconstruction).}
+    \caption{The missing mass spectrum is plotted for the carbon target as a function of the reconstructed z vertex in the target (extracted from MVRT bank). The missing mass distribution after selection on large z ( to emphasize the hydrogen (ice) contamination) is shown in Fig. \ref{fig:dilution_factor_z3}, which illustrates the narrow peak having width and properties consistent with hydrogen data. For comparison Fig.  \ref{fig:dilution_factor_z2}  shows the missing mass for a more central region of the graphite where little evidence of hydrogen contamination is evident.}
     \label{fig:dilution_factor_z0}
   \end{center}
 \end{figure}
@@ -124,16 +124,17 @@ Figs \ref{fig:dilution_comp_E0} to \ref{fig:dilution_comp_E3} show examples for.
   \label{table:dil_factor_zcut}
 \end{table}
 
-\begin{figure}[htb]
+\begin{figure}[H]
   \begin{center}
     \includegraphics[width=0.8\textwidth]{figures/plot_dil_730_tot_E1_theta6.png} \\
-    \caption{Missing Mass distribution for the carbon target before (BLUE) and after(RED) the Z cut (The histogram after the Cut is scaled to the one before the cut in order to compare the spectrums). A fitted function is used to smooth the carbon missing mass distribution (a Gaussian plus a polynomial of 3-rd order): This last fit will get rid of possible last hydrogen contamination in the spectrum. For the error on the carbon subtraction, I have used the area delimitated by the statistical error of each bin in the carbon histogram in the range where the butanol missing mass is considered (in this bin the $-2\sigma - 2\sigma$ range includes values from 0.91GeV to 0.97GeV).}
+    \caption{Missing Mass distribution for the carbon target before (BLUE) and after(RED) the Z cut. The cut histogram (RED) is scaled to the uncut (BLUE) in the region M=0.9-1.2GeV). The red line shows a fit to the cut data comprising a gaussian plus a 3rd order polynomial. The gaussian width in the fit has minimum value constrained by the same fit to the butanol data.  
+ For the error on the carbon subtraction, I have used the area delimitated by the statistical error of each bin in the carbon histogram in the range where the butanol missing mass is considered (in this bin the $-2\sigma - 2\sigma$ range includes values from 0.91GeV to 0.97GeV).}
     \label{fig:dilution_mass_zcut}
   \end{center}
 \end{figure}
 
 
-\begin{figure}[htb]
+\begin{figure}[H]
   \begin{center}
     \subfloat[][Energy Cut 1] {
       \includegraphics[width=0.25\textwidth]{figures/plot_dil_1300_tot_E0_theta6.png} 
@@ -159,15 +160,14 @@ Figs \ref{fig:dilution_comp_E0} to \ref{fig:dilution_comp_E3} show examples for.
       \includegraphics[width=0.5\textwidth]{figures/dilution_factor_1300_E1_E2_theta6_comp2.pdf}
       \label{fig:dilution_fit_comp2}
       }
-    \caption{Missing Mass distribution for butanol (BLUE) and carbon(RED) after the Z cut for the carbon target. A fitted function (RED line)  is used to smooth the carbon missing mass distribution (a Gaussian plus a polynomial of 3-rd order). This bin corresponds to the Coherent edge of 1.3GeV (This data-set has been divided into 4 W bins; For this settings, the contribution for butanol in the missing mass spectrum (and so for the dilution factor) is considered just in the range from $\sim 0.88$ GeV to $\sim 0.99$ GeV). The W dependence for this data set (see Fig. \ref{fig:dilution_fit_theta6} and Fig. \ref{fig:dilution_comp_E0},\ref{fig:dilution_comp_E1},\ref{fig:dilution_comp_E2},\ref{fig:dilution_comp_E3} for each Energy-bin distribution contributing to this plot) shows a strong difference between the first energy bin and the other energy bins. The reason for the difference is due to an underlying structure in the hydrogen and carbon spectrum in this energy range (see Fig. \ref{fig:comparison_dilutionfactor}). In order to show the reason for defining the carbon error, in Fig. \ref{fig:dilution_fit_comp2} it is plotted the scaled carbon fitted function for the next energy bin. One can see how the fitting is somehow overcounting for one bin and be undercounting for the next. For this reason as error for the carbon subtraction I have kept the area defined by the error in the carbon data histograms (in the $2\sigma$ missing mass range). \\
-      From $W\geq 1.8 GeV$ it is not expected a strong W dependence in the dilution factor. For this reason a final fit is applied to the dilution factor as a function of W for different angle ranges (in the CM) (See Fig. \ref{fig:dilution_fit_theta6}): Different functions have been used for different $e^-$ beam energy, since this will affect directly the photon resolution and so directly the width of the neutron peak. The final value for the dilution factor in this range will be the value of this final fit. In order to keep a conservative approach, for the error on the dilution factor for each bin I have kept the error at each point. }
+    \caption{Missing Mass distribution for butanol (BLUE) and carbon(RED) after the Z cut for the carbon target. A fitted function (RED line)  is used to smooth the carbon missing mass distribution (a Gaussian plus a polynomial of 3-rd order). This bin corresponds to the Coherent edge of 1.3GeV (This data-set has been divided into 4 W bins; For this settings, the contribution for butanol in the missing mass spectrum (and so for the dilution factor) is considered just in the range from $\sim 0.88$ GeV to $\sim 0.99$ GeV). The W dependence for this data set (see Fig. \ref{fig:dilution_fit_theta6} and Fig. \ref{fig:dilution_comp_E0},\ref{fig:dilution_comp_E1},\ref{fig:dilution_comp_E2},\ref{fig:dilution_comp_E3} for each Energy-bin distribution contributing to this plot) shows a strong difference between the first energy bin and the other energy bins. The reason for the difference is due to an underlying structure in the hydrogen and carbon spectrum in this energy range (see Fig. \ref{fig:comparison_dilutionfactor}). In order to show the reason for defining the carbon error, in Fig. \ref{fig:dilution_fit_comp2} it is plotted the scaled carbon fitted function for the next energy bin. One can see how the fitting is somehow overcounting for one bin and be undercounting for the next. For this reason as error for the carbon subtraction I have kept the area defined by the error in the carbon data histograms (in the $2\sigma$ missing mass range). }
     \label{fig:dilution_fit_comp}
   \end{center}
 \end{figure}
 
 The Dilution factor shows some W dependent structure for $W < 1.8GeV$, especially for central $\theta_{CM}$. Similar structure was seen in the previous analysis by S. Strauch in \cite{Strauch_2014} that used circularly polarized photon beam \footnote{Keeping into consideration that in this previous analysis, with a better photon resolution (and therefore missing mass resolution) due to lower electron beam energy, the dilution factor was higher than the one calculated here}. Such structures would be expected due to different W dependence of the cross sections for pion photo-production from the proton and nuclei (see as example Fig. \ref{fig:comparison_dilutionfactor}). It is well established that the strong resonance structure observed on the proton in the second resonance region above the $\Delta$  is largely washed out in pion production from nuclei, so it would be expected to influence the extracted dilution factor which is formed from the ratio of nuclear and proton yields. For $W \geq 1.8GeV$, above the strong second resonance region, the Dilution factor it is not expected to show significant structure: For this reason, a linear fit was used for this mass range to smooth statistical fluctuations. Although the dilution factor used the fitted line to give values in each bin, the statistical error in the dilution factor data for each bin was used in estimating the error. The extracted dilution factors for each $cos(\theta_{CM})$ bin are shown in  appendix \ref{app:dilfactor} from page \pageref{app:dilfactor}.  
 
-\begin{figure}[htb]
+\begin{figure}[H]
   \begin{center}
     \includegraphics[width=0.6\textwidth]{figures/comp_DF_maid_crosssection.pdf} \\
     \caption{Dilution factor for a single $cos(\theta_{CM})$ bin vs W (RED, GREEN, BLUE points correspond to different electron beam energy settings). Here is plotted together with the scaled total cross section for $\pi^+$ photoproduction on proton from the MAID 2007 model \cite{MAID_2007} (BLACK points). Since for $W \geq 1.8GeV$ it is not expected a fluctuation on the Dilution factor, a linear fit is used for the two electron beam energy settings in this range in order to mitigate possible fluctuations in the extraction of G.}
@@ -206,7 +206,14 @@ Analyzing the results of these simulations (see Appendix \ref{app:simcode} for a
 
 \subsubsection{Photon Polarization}\label{sec:ph_pol_sys}
 For the photon polarization, the effect on the extracted G and $\Sigma$ when using modified shapes for the variation of polarisation with e-gamma \footnote{Using the data profile for the Beam polarization histogram for each $W$, $cos(\theta_{CM})$ bin} and also including a gaussian error on the polarisations (with sigma taken from the statistical error in the determination of the coherent edge position) have been tested. None of these studies (carried out separately for each costheta, W bin) yielded systematic changes of the extracted values of G and Sigma greater than 1\%. The dominiant systematic in the photon polarization therefore comes from the theoretical modelling (including account of the beamline parameters) required to relate the coherent edge positions to the polarization. The quoted systematic error for this procedure (obtained from colleagues at Glasgow who carry out these calculations) is 10\%.
- This systematic error was added in quadrature to the Polarization statistical error obtained from the polarization tables \cite{Anderson_table}.
+ This systematic error was added in quadrature to the Polarization statistical error obtained from the polarization tables \cite{Anderson_table}. \\
+Systematic effects on the extraction of the Photon Polarization have been checked letting varying the selection of the allowed range around the nominal value of $>50\%$ (This was done in order to see how the selection of this range was affecting the result):
+\begin{align}
+  P_\gamma &> 45 \% \\
+  P_\gamma &> 50 \% \\
+  P_\gamma &> 55 \% 
+\end{align}
+In most cases this was a negligible effect. However for some $W$. $cos(\theta_{CM})$ bins where the photon energy corresponds to the extremeties of the coherent peak range variations were noted. These bins are shown when presenting the final results (sections \ref{ch:result_W} and \ref{ch:result_th} where this effect is shown as an increased error at each measured G in \color{red}{red}\color{black}{)} 
 
 
 \subsubsection{Target Polarization}\label{sec:tg_pol_sys}
@@ -238,14 +245,14 @@ Similar effects were observed and correction were applied when extracting $\Sigm
 \end{table}
 
 
-\begin{figure}[htb]
+\begin{figure}[H]
   \begin{center}
     \includegraphics[width=0.6\textwidth]{figures/Sys_corr/Graph_G_100.pdf} \\
     \caption{Systematic correction for G with a statistic of 100 events as a function of the extracted values for G and $\Sigma$. Each combination of G and $\Sigma$ is simulated 100 times and averaged after extraction of the parameters. }
     \label{fig:sys_correction_100}
   \end{center}
 \end{figure}
-\begin{figure}[htb]
+\begin{figure}[H]
   \begin{center}
     \includegraphics[width=0.6\textwidth]{figures/Sys_corr/calc_correction.pdf} \\
     \caption{Systematic correction for G with its error for a particular values of extracted G and $\Sigma$ as a function of the statistic at a $W$,$cos(\theta_{CM})$ bin (For a list of the different statistic used, see Table \ref{table:sim_nevents}). A final interpolation is used in determining the systematic correction at a particular statistic for those extracted values of G and $\Sigma$. It is peculiar to see how one cannot push the statistics below a certain limit in order to avoid a divergence of the systematic correction. For high statistical bins, this correction becomes irrelevant. }
@@ -285,7 +292,7 @@ In order to remove the remaining effects due to acceptance and to allow the simu
 \begin{equation}
   A(\phi)_+ = \frac{N_{\parallel +} - N_{\perp +}}{N_{\parallel +} + N_{\perp +}} = \frac{ (\frac{1}{P_{\gamma \parallel}} - \frac{1}{P_{\gamma \perp}}) + 2 \Sigma cos(2(\phi-\phi_0)) +  (P_{+z\parallel}+P_{+z\perp}) G sin(2(\phi-\phi_0))}{(\frac{1}{P_{\gamma \parallel}} + \frac{1}{P_{\gamma \perp}}) +(P_{+z\parallel}-P_{+z\perp}) G sin(2(\phi-\phi_0))} \label{eq:A1}
 \end{equation}
-\begin{figure}[htb]
+\begin{figure}[H]
   \begin{center}
     \subfloat[][Asymmetry for $1.71GeV \leq E_{CM} < 1.74GeV$ and $0.4 \leq cos(\theta_{CM}) < 0.6$  ] {
       \includegraphics[width=0.9\textwidth]{figures/G_tgpol_effect.pdf} 
@@ -317,14 +324,5 @@ A fitted function was used in order to extract the values (after testing that $\
 \end{align}
 The results are obtained (See for example Fig. \ref{fig:GTgpol}) separately for both target polarisations. These gave statistically consistent results (See appendix at \ref{app:G_TGPOL} and at \ref{app:Sigma_TGPOL}). The final results come from a weighted average of the G or $\Sigma$ extracted from the two target polarizations. These results are presented in the next chapter.
 
-
-\subsection{Systematic effects on setting a cut-off limit of 50\% for the Photon Polarization}\label{ch:50pc_pol}
-Systematic effects on the extraction of the Photon Polarization have been checked letting varying the selection of the allowed range around the nominal value of $>50\%$ (This was done in order to see how the selection of this range was affecting the result):
-\begin{align}
-  P_\gamma &> 45 \% \\
-  P_\gamma &> 50 \% \\
-  P_\gamma &> 55 \% 
-\end{align}
-In most cases this was a negligible effect. However for some $W$. $cos(\theta_{CM}) bins where the photon energy corresponds to the extremeties of the coherent peak range variations were noted. These bins are shown when presenting the final results (sections \ref{ch:result_W} and \ref{ch:result_th}) 
 
 
