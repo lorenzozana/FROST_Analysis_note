@@ -62,7 +62,17 @@ The value of G is extracted independently from different target polarizations (p
 
 \subsection{\texorpdfstring{$\Sigma$}{Sigma} vs \texorpdfstring{$E_{CMS}$}{E-CMS} for different \texorpdfstring{$cos(\theta)$}{cos(theta)} bins and different Target polarization}
 \label{app:Sigma_TGPOL}
-The value of $\Sigma$ is extracted independently from different target polarizations (positive (GREEN)  and negative (BLUE) ). Results are compared in order to investigate possible systematic difference between the two sets. Here are plotted vs $E_{CMS}$(W) for different $cos(\theta_{CM})$ bins.
+The value of $\Sigma$ is extracted independently from different target polarizations (positive (GREEN)  and negative (BLUE) ) and from an unpolarized target ($CH_2$ (BLACK), which is present in the same beamline (see Fig. \ref{fig:target_draw} at page \pageref{fig:target_draw})). In the case of the unpolarized $CH_2$ target, the extraction of $\Sigma$ is simplified, since one parameter (C in Eq. \ref{eqn:sigma_param}) is set to zero in case of $P_z=0$ (see chapter \ref{ch:extract_G_S} for further details), and the updated equation becomes eq. \ref{eq:sigma_param_CH2}. 
+\begin{align}
+  f(\phi) & = A + B cos(2(\phi-\phi_0)) + C sin(2(\phi-\phi_0)) & POLARIZED\, TARGET \label{eqn:sigma_param}\\
+   f(\phi) & = A + B cos(2(\phi-\phi_0))  & UNPOLARIZED\, TARGET (CH_2) \label{eq:sigma_param_CH2}\\
+   \Sigma & = \frac{B}{D_F \, \bar{p}} & \\
+   \textnormal{where:} \, D_F & =   \textnormal{Dilution Factor} & \\
+    \frac{2}{\bar{p}} & = \left(\frac{1}{P_{\gamma \parallel}} + \frac{1}{P_{\gamma \perp}}\right) &
+\end{align}
+The use of considering a parallel measurement with 2 polarized settings and an unpolarized target is to investigate possible systematic difference between the sets (positive and negative target polarization) and rule out possible effects of correlation in the contemporary extraction of G and $\Sigma$ (positive target polarization vs $CH_2$ and negative target polarization vs $CH_2$). \\
+ Here are plotted vs $E_{CMS}$(W) for different $cos(\theta_{CM})$ bins.
+
 \begin{figure}[htb]
   \begin{center}
     \subfloat[][ $ -1 \leq cos(\theta_{CM})<-0.8$ ] {
