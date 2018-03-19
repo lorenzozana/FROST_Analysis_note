@@ -1,11 +1,11 @@
 \section{Extraction of the G Double-Polarization Observable} \label{ch:extract_G}
-The cross section for the $p(\gamma,\pi^+)n$ reaction, for the case of a linearly polarised photon beam and a longitudinally polarised nucleon target is given by:
+The cross section for the $p(\gamma,\pi^+)n$ reaction, for the case of a linearly polarized photon beam and a longitudinally polarized nucleon target is given by:
 \begin{equation}
   \frac{d\sigma}{d\Omega} = \left(\frac{d\sigma}{d\Omega}\right)_{UNPOL}  \left( 1 + P_{\gamma}\Sigma cos(2\phi) + P_{\gamma} P_z G sin(2\phi) \right)
   \label{eqn:extract_G_S}
 \end{equation}
 
-This is derived from equation \ref{eqn:CGLN} ( page \pageref{eqn:CGLN}) where the zero value for transverse target polarisation ($P_x , P_y$) and circular beam polarisation ($P_{\bigodot}$) cause other terms to be zero. The target linear polarization along the photon beam direction $P_z$, and the Polarization of the photon beam (PARA, $P_{\parallel}$ (Electric field parallel to the floor) and PERP, $P_{\perp}$ (Electric field perpendicular to the floor)) were varied in the experiment. The polarization of the beam was flipped regularly between PARA and PERP during the running, while the target polarization was only usually flipped only once during each coherent edge setting. All possible combinations of polarizations were measured:
+This is derived from equation \ref{eqn:CGLN} ( page \pageref{eqn:CGLN}) where the zero value for transverse target polarization ($P_x , P_y$) and circular beam polarization ($P_{\bigodot}$) cause other terms to be zero. The target linear polarization along the photon beam direction $P_z$, and the Polarization of the photon beam (PARA, $P_{\parallel}$ (Electric field parallel to the floor) and PERP, $P_{\perp}$ (Electric field perpendicular to the floor)) were varied in the experiment. The polarization of the beam was flipped regularly between PARA and PERP during the running, while the target polarization was only usually flipped only once during each coherent edge setting. All possible combinations of polarizations were measured:
 
 \begin{eqnarray}
 \left(\frac{d\sigma}{d\Omega}\right)_{\parallel +} = \left(\frac{d\sigma}{d\Omega}\right)_{UNPOL}  \left( 1 + P_{\gamma \parallel}\Sigma cos(2\phi) + P_{\gamma \parallel} P_{+z\parallel} G sin(2\phi) \right) \\
@@ -13,10 +13,10 @@ This is derived from equation \ref{eqn:CGLN} ( page \pageref{eqn:CGLN}) where th
 \left(\frac{d\sigma}{d\Omega}\right)_{\perp +} = \left(\frac{d\sigma}{d\Omega}\right)_{UNPOL}  \left( 1 - P_{\gamma \perp}\Sigma cos(2\phi) - P_{\gamma \perp} P_{+z\perp} G sin(2\phi) \right) \\
 \left(\frac{d\sigma}{d\Omega}\right)_{\perp -} = \left(\frac{d\sigma}{d\Omega}\right)_{UNPOL}  \left( 1 - P_{\gamma \perp}\Sigma cos(2\phi) + P_{\gamma \perp} P_{-z\perp} G sin(2\phi) \right)
 \end{eqnarray}
-The construction of asymmetry observables between these combinations allows the simulataneus extraction of G and $\Sigma$ (see chapter \ref{ch:extract_G_S}). Data with an unpolarised photon beam was also obtained in the FROST run period using an amorphous (AMO) crystal (carbon) radiator to produce the bremsstrahlung photons from the beam. This was used for normalisation of the data (Section \ref{ch:flux}) and for taking into account acceptance effects. 
+The construction of asymmetry observables between these combinations allows the simultaneous extraction of G and $\Sigma$ (see chapter \ref{ch:extract_G_S}). Data with an unpolarized photon beam was also obtained in the FROST run period using an amorphous (AMO) crystal (carbon) radiator to produce the bremsstrahlung photons from the beam. This was used for normalization of the data (Section \ref{ch:flux}) and for taking into account acceptance effects. 
 
 \subsection{Calculation of the flux on target, F} \label{ch:flux}
-During the experiment, every effort was made to collect the same amount of data for all four possible combinations of (polarised beam)-(polarised target) settings. In practice, however, the flux incident on the target for the PARA and PERP beam settings was not exactly equal and the $\pi^+$ azimuthal distributions (See Fig. \ref{fig:frost_PARA_ex} for an example) had to be scaled to each other before any further analysis.
+During the experiment, every effort was made to collect the same amount of data for all four possible combinations of (polarized beam)-(polarized target) settings. In practice, however, the flux incident on the target for the PARA and PERP beam settings was not exactly equal and the $\pi^+$ azimuthal distributions (See Fig. \ref{fig:frost_PARA_ex} for an example) had to be scaled to each other before any further analysis.
 \begin{figure}[H]
   \begin{center}
     \includegraphics[width=0.6\textwidth]{figures/phi_PARA.pdf} \\
@@ -30,8 +30,8 @@ During the experiment, every effort was made to collect the same amount of data 
 The PARA and PERP $\pi^+$ distributions for a particular target setting were first divided through by the AMO data to remove acceptance effects.
 Considering:
 \begin{enumerate}
-  \item $F$ is the flux on target for each photon beam setting, which is dependent on both photon energy and linear beam polarisation. 
-  \item $\phi_0$ is the “phi-offset” which accounts for any small misalignment of the diamond radiator resulting in the beam polarisations not being exactly parallel or exactly perpendicular to the floor.
+  \item $F$ is the flux on target for each photon beam setting, which is dependent on both photon energy and linear beam polarization. 
+  \item $\phi_0$ is the “phi-offset” which accounts for any small misalignment of the diamond radiator resulting in the beam polarizations not being exactly parallel or exactly perpendicular to the floor.
 \end{enumerate}
 
 \begin{eqnarray}
@@ -46,7 +46,7 @@ These distributions were fitted with a function having 4 parameters ($ a,b,c,d $
 \begin{equation} \label{eqn:fit_flux}
 f(\phi) = a \{ 1 + b\, cos[2 (\phi - c) ]  + d\, sin[2(\phi - c)] \} 
 \end{equation}
-In this fit, $a$ provides the parameter used to determine the PERP and PARA fluxes and $c$ is a check of the possible $\phi_0$ offset (c parameter) due to diamond misalignement.
+In this fit, $a$ provides the parameter used to determine the PERP and PARA fluxes and $c$ is a check of the possible $\phi_0$ offset (c parameter) due to diamond misalignment.
 This method of dividing by the amorphous data was necessary to allow the PARA and PERP flux to be extracted separately. The fits were performed for each photon energy bin to assess systematics. No significant variations in the phi offset parameter (c) were observed. Subsequently the fit was optimized by setting the offset (c parameter) to zero in the fit. 
 Using the results of the fits for the PARA ($\parallel$) and PERP ($\perp$) configurations, the ratio between the two different measurements can be determined (using eqn. \ref{eqn:fit_flux}) as:
 \begin{equation}
@@ -57,7 +57,7 @@ The ratios extracted ranged from $\sim 0.3$ to $\sim 3.0$ (being normally $\sim 
 
 \subsection{Calculation of the Dilution Factor}
 \label{ch:dil_factor}
-The dilution factor (see equation \ref{eqn:dil_factor}) was calculated for each energy and $cos(\theta_{CM})$ bin using the data obtained from the carbon target to model the unpolarised nucleon background in the butanol target.
+The dilution factor (see equation \ref{eqn:dil_factor}) was calculated for each energy and $cos(\theta_{CM})$ bin using the data obtained from the carbon target to model the unpolarized nucleon background in the butanol target.
 As the four vectors of the incident photon, target proton and outgoing pion were known, the neutron four-vector was reconstructed using the missing mass technique:
 $$
 \gamma \, + \,  p \, \rightarrow \, \pi^+ \, + \, X
@@ -80,14 +80,13 @@ a broad peak to the right of this corresponding mainly to two-pion production ch
 \end{figure}
 Fig. \ref{fig:frost_neutronmissing_ex} shows an example of the missing mass distribution obtained from the reconstructed neutron four-vector in the butanol target, showing a sharp peak corresponding to the missing neutron mass and a broad peak to the right of this corresponding to other possible channels such as multi-pion production. This plot also shows background contributions due to photon interactions with the carbon and oxygen atoms in the butanol target.
 A missing mass cut was applied to select the neutron and hence the $\pi + n$ events of interest: Following the systematic study on the width of the missing mass cut done by S. Strauch in \cite{Strauch_2014} a cut of $2 \sigma$ around the neutron missing mass was used in each bin \footnote{This cut was established from the data after the nuclear subtraction described below}. \\
-The shape of the unpolarised background was established using the data from the carbon target. 
- The missing-mass distribution obtained from the carbon target was first scaled to the butanol missing-mass distribution. To obtain the scale factor ((i.e. the fraction of unpolarised data coming from the butanol target for the region of the neutron peak in the missingmass spectra), the ratio of the  missing mass spectrum for butanol and carbon were fit with a Gaussian function and a zeroth order polynomial (an example fit  is shown in Fig. \ref{fig:scaling_dilutionfactor}). . The gaussian peak is from the $p(\gamma,\pi^+)n$ events in the butanol and the polynomial gives the contribution of unpolarised events in the region of the neutron peak. \\
- 
-As the carbon and butanol targets were very close together in the beamline and could not be fully resolved in the z-vertex distribution spectrum, some events within the carbon z-vertex cuts will have originated from polarised protons within the butanol target. Another issue was ice formed in the face of the carbon farther from the butanol target (see Fig. \ref{fig:dilution_factor_z0}). To address the latter problem, the missing mass distribution was plotted versus the vertex reconstructed with the MVRT bank. A dependence was found with a distinct hydrogen contamination for the face of the carbon target farther from the butanol (see Fig. \ref{fig:dilution_factor_z0}). Therefore a cut was applied to the MVRT.Z position for each beam configuration in order to remove the "face" region where the hydrogen contamination is most significant (See Table \ref{table:dil_factor_zcut}) \footnote{This approach was seen as more consistent for all different bins and settings than using a double fitting procedure for removing the main part of the hydrogen contamination}. For this "cleaned" data set was performed a fit on the missing mass distribution using a combination of a Gaussian function and a third order polynomial (See Fig. \ref{fig:dilution_mass_zcut}). The Gaussian function represented the (Fermi smeared) neutron peak due to the quasi-free pion photoproduction the carbon and oxygen nuclei. The polynomial modeled the broad background coming from mostly multi-pion production and other non-quasi-free processes. A lower limit was set for the $\sigma$ of the Gaussian function, using the value for the same parameter obtained from the butanol target (See Fig. \ref{fig:dilution_mass_zcut}). The integral of the butanol experimental data in the neutron mass peak gave $N_B$. For the carbon background the results fitting to the normalised carbon data was used to evaluate $N_C$, by integrating this function over the neutron missingmass region. The result of the fit was then fitted with a linear function in the region $W>1.8GeV$ in order to minimize fluctuations due to poor statistics.   The dilution factor to be calculated as:
+The shape of the unpolarized background was established using the data from the carbon target. 
+ The missing-mass distribution obtained from the carbon target was first scaled to the butanol missing-mass distribution. To obtain the scale factor ((i.e. the fraction of unpolarized data coming from the butanol target for the region of the neutron peak in the missingmass spectra), the ratio of the  missing mass spectrum for butanol and carbon were fit with a Gaussian function and a zeroth order polynomial (an example fit  is shown in Fig. \ref{fig:scaling_dilutionfactor}). . The gaussian peak is from the $p(\gamma,\pi^+)n$ events in the butanol and the zeroth order polynomial gives the scaling factor for the contribution of unpolarized events in the region around the neutron peak. \\
+A dependence was found with a distinct hydrogen contamination for the face of the carbon target farther from the butanol (see Fig. \ref{fig:dilution_factor_z0}). Therefore a cut was applied to the MVRT.Z position for each beam configuration in order to remove the "face" region where the hydrogen contamination is most significant (See Table \ref{table:dil_factor_zcut}) \footnote{This approach was seen as more consistent for all different bins and settings than using a double fitting procedure for removing the main part of the hydrogen contamination}. For this "cleaned" data set was performed a fit on the missing mass distribution using a combination of a Gaussian function and a third order polynomial (See Fig. \ref{fig:dilution_mass_zcut}). The Gaussian function represented the (Fermi smeared) neutron peak due to the quasi-free pion photoproduction the carbon and oxygen nuclei. The polynomial modeled the broad background coming from mostly multi-pion production and other non-quasi-free processes. As the carbon and butanol targets were very close together in the beamline and could not be fully resolved in the z-vertex distribution spectrum, some events within the carbon z-vertex cuts will have originated from polarized protons within the butanol target.  A lower limit was set for the $\sigma$ of the Gaussian function, using the value for the same parameter obtained from the butanol target (See Fig. \ref{fig:dilution_mass_zcut}). The integral of the butanol experimental data in the neutron mass peak gave $N_B$. For the carbon background the results fitting to the normalized carbon data was used to evaluate $N_C$, by integrating this function over the neutron missingmass region. The result of the fit was then fitted with a linear function in the region $W>1.8GeV$ in order to minimize fluctuations due to poor statistics.   The dilution factor to be calculated as:
 \begin{equation} \label{eqn:dil_factor}
   D_F = \frac{N_B - N_C}{N_B}
 \end{equation}
-For the butanol data the statistics for each bin were high enough to derive the statistical error in $N_B$ from the Integral of the yield in the $2\sigma$ missing mass region. For the error on $N_C$, in order to keep a conservative approach for both ranges ($W<1.8GeV$ and $W\geq 1.8GeV$) , it  was kept the histogram Integral error, since it better reflects the statistical uncertainties of each bin and  does not introduce any model dependency because does not come from a fitting procedure \footnote{This was done so that low statistics bins where the fit was not well defined would have an appropriate error. Fig. \ref{fig:dilution_fit_comp2} shows an example case where the shape of the carbon background indicates inconsistency with neighbouring energy bin (shown by the difference between the two lines on the figure). }. Figs \ref{fig:dilution_comp_E0} to \ref{fig:dilution_comp_E3} show examples for.a range of photon energy bins  of butanol missingmass spectra  compared to the scaled carbon data, along with the fit (red line) used to establish the carbon yield $N_C$. The extracted dilution factors (obtained from equation \ref{eqn:dil_factor}) are presented as a function of W for a single $cos(\theta_{CM})$ bin in Fig. \ref{fig:dilution_fit_theta6}.
+For the butanol data the statistics for each bin were high enough to derive the statistical error in $N_B$ from the Integral of the yield in the $2\sigma$ missing mass region. For the error on $N_C$, in order to keep a conservative approach for both ranges ($W<1.8GeV$ and $W\geq 1.8GeV$) , it  was kept the histogram Integral error, since it better reflects the statistical uncertainties of each bin and  does not introduce any model dependency because does not come from a fitting procedure \footnote{This was done so that low statistics bins where the fit was not well defined would have an appropriate error. Fig. \ref{fig:dilution_fit_comp2} shows an example case where the shape of the carbon background indicates inconsistency with neighboring energy bin (shown by the difference between the two lines on the figure). }. Figs \ref{fig:dilution_comp_E0} to \ref{fig:dilution_comp_E3} show examples for.a range of photon energy bins  of butanol missingmass spectra  compared to the scaled carbon data, along with the fit (red line) used to establish the carbon yield $N_C$. The extracted dilution factors (obtained from equation \ref{eqn:dil_factor}) are presented as a function of W for a single $cos(\theta_{CM})$ bin in Fig. \ref{fig:dilution_fit_theta6}.
  
 \begin{figure}[H]
   \begin{center}
@@ -182,7 +181,7 @@ The Dilution factor shows some W dependent structure for $W < 1.8GeV$, especiall
 
 \subsection{Calculation of Systematic Corrections end Systematic error evaluations used in  the extraction of G and \texorpdfstring{$\Sigma$}{Sigma}}
 \label{ch:sys_corr}
-In this section we will describe how the systematic errors for the results were obtained and how necessary systematic corrections were evaluated and applied. A key part of this assesment was the development of a model for simulating the extraction of G and $\Sigma$. This study  quantifies any necessary systematic corrections induced by the extraction process. A simulation of the reaction process was developed in which the photon energy dependence of the photon polarisation, statistics, and target polarisation can be varied and the effects on the G,$\Sigma$ extraction can be assessed. As a basis, the real distrubutions obtained by the data (bin-by-bin) were input to the model. In this way we could address possible sources of systematic effects and improve our extraction method. \\ 
+In this section we will describe how the systematic errors for the results were obtained and how necessary systematic corrections were evaluated and applied. A key part of this assessment was the development of a model for simulating the extraction of G and $\Sigma$. This study  quantifies any necessary systematic corrections induced by the extraction process. A simulation of the reaction process was developed in which the photon energy dependence of the photon polarization, statistics, and target polarization can be varied and the effects on the G,$\Sigma$ extraction can be assessed. As a basis, the real distributions obtained by the data (bin-by-bin) were input to the model. In this way we could address possible sources of systematic effects and improve our extraction method. \\ 
 In the study all parameters contributing to the cross section (equation \ref{eqn:extract_G_S}) were tested to explore their systematic sensitivities to the extraction of G and $\Sigma$. The studies carried out are listed below with the results outlined in the following sections.
 
 \begin{enumerate}
@@ -194,11 +193,11 @@ In the study all parameters contributing to the cross section (equation \ref{eqn
   \end{enumerate}
 \item Target Polarization ($P_z$) (see chapter \ref{sec:tg_pol_sys} for more details) was tested for
   \begin{enumerate}
-  \item Different time dependence of the polarisation during the data taking for the $cos(\theta_{CM})$,W bin,
+  \item Different time dependence of the polarization during the data taking for the $cos(\theta_{CM})$,W bin,
   \item combining data with different coherent edge settings.
   \end{enumerate}
 \item Since the extraction of G and $\Sigma$ is correlated (see  equations \ref{eq:N1} - \ref{eq:N4}) a grid of 11 different values for G and $\Sigma$ was simulated (see section \ref{sec:G_Sigma_sys} for more details)
-\item Different statistics in the same $cos(\theta_{CM})$,W bin for Parallel and Perpendicular photon polarization and Amorphous radiatior runs: As expected no extra source of systematic errors (that is not already described by the correction defined at \ref{sec:G_Sigma_sys}) comes from this effect. 
+\item Different statistics in the same $cos(\theta_{CM})$,W bin for Parallel and Perpendicular photon polarization and Amorphous radiator runs: As expected no extra source of systematic errors (that is not already described by the correction defined at \ref{sec:G_Sigma_sys}) comes from this effect. 
 \item Two different ways of filling the $\phi_{\pi^+}$ histograms have been tested (see section \ref{sec:weighthisto} for more details):
   \begin{enumerate}
   \item Filling the histograms without any weighting (I will use equation \ref{eq:N1} - \ref{eq:N4} in order to extract G and $\Sigma$)
@@ -209,20 +208,20 @@ Analyzing the results of these simulations (see Appendix \ref{app:simcode} for a
 
 
 \subsubsection{Photon Polarization}\label{sec:ph_pol_sys}
-For the photon polarization, the effect on the extracted G and $\Sigma$ when using modified shapes for the variation of polarisation with e-gamma \footnote{Using the data profile for the Beam polarization histogram for each $W$, $cos(\theta_{CM})$ bin} and also including a gaussian error on the polarisation (with sigma taken from the statistical error in the determination of the coherent edge position) have been tested. None of these studies (carried out separately for each costheta, W bin) yielded systematic changes of the extracted values of G and Sigma greater than 1\%. The dominiant systematic in the photon polarization therefore comes from the theoretical modelling (including account of the beamline parameters) required to relate the coherent edge positions to the polarization. The quoted systematic error for this procedure (obtained from colleagues at Glasgow who carry out these calculations) is 10\%.
+For the photon polarization, the effect on the extracted G and $\Sigma$ when using modified shapes for the variation of polarization with e-gamma \footnote{Using the data profile for the Beam polarization histogram for each $W$, $cos(\theta_{CM})$ bin} and also including a gaussian error on the polarization (with sigma taken from the statistical error in the determination of the coherent edge position) have been tested. None of these studies (carried out separately for each costheta, W bin) yielded systematic changes of the extracted values of G and Sigma greater than 1\%. The dominant systematic in the photon polarization therefore comes from the theoretical modelling (including account of the beamline parameters) required to relate the coherent edge positions to the polarization. The quoted systematic error for this procedure (obtained from colleagues at Glasgow who carry out these calculations) is 10\%.
  This systematic error was added in quadrature to the Polarization statistical error obtained from the polarization tables \cite{Anderson_table}. \\
-Systematic effects on the Photon Polarization from only keeping the photons where the polarisation is predcited to be >50\%  have been checked by varying the selection of the allowed range around the nominal value of $>50\%$. The different selsctions employed in this study are listed below: 
+Systematic effects on the Photon Polarization from only keeping the photons where the polarization is predicted to be >50\%  have been checked by varying the selection of the allowed range around the nominal value of $>50\%$. The different selections employed in this study are listed below: 
 \begin{align}
   P_\gamma &> 45 \% \\
   P_\gamma &> 50 \% \\
   P_\gamma &> 55 \% 
 \end{align}
-In most cases this was a negligible effect. However for some $W$. $cos(\theta_{CM})$ bins where the photon energy corresponds to the extremeties of the coherent peak range some variations were noted. These bins are shown when presenting the final results (sections \ref{ch:result_W} and \ref{ch:result_th} where this effect is shown as a generally small increased error (the error including this eeffect is shown by the \color{red}{red} \color{black}{error} bars, without this effect by the black error bars). 
+In most cases this was a negligible effect. However for some $W$. $cos(\theta_{CM})$ bins where the photon energy corresponds to the extremities of the coherent peak range some variations were noted. These bins are shown when presenting the final results (sections \ref{ch:result_W} and \ref{ch:result_th} where this effect is shown as a generally small increased error (the error including this effect is shown by the \color{red}{red} \color{black}{error} bars, without this effect by the black error bars). 
 
 
 \subsubsection{Target Polarization}\label{sec:tg_pol_sys}
-The Target polarization was slowly varying through the experimental data taking, typically at a rate around 1\% per day \cite{Keith_2012}. The values for the target polarisation, averaged over the beamtime for each coherent edge setting are shown in the appendix (chapter \ref{app:tgpol}).  Analysis of simulated data showed that the decay of the target polarisation does not affect the extraction of G and $\Sigma$, within an error below 1\%. As in the previous study this was assessed on a bin-by-bin basis in $W$, $cos(\theta_{CM})$. \\
-The simulation analysis also showed that (as expected \footnote{This is as in the analysis the product $G,P_z$ is extracted from an offset in the $\phi$ distributions from zero. Data with significantly different degrees of target polarisation would mean merging data with different $\phi$ offsets.}) combining data sets with significantly different degrees of target polarisation would produce unwanted systematics in the extraction of G and $\Sigma$. Therefore we analyse the different target polarisation settings separately. 
+The Target polarization was slowly varying through the experimental data taking, typically at a rate around 1\% per day \cite{Keith_2012}. The values for the target polarization, averaged over the beamtime for each coherent edge setting are shown in the appendix (chapter \ref{app:tgpol}).  Analysis of simulated data showed that the decay of the target polarization does not affect the extraction of G and $\Sigma$, within an error below 1\%. As in the previous study this was assessed on a bin-by-bin basis in $W$, $cos(\theta_{CM})$. \\
+The simulation analysis also showed that (as expected \footnote{This is as in the analysis the product $G,P_z$ is extracted from an offset in the $\phi$ distributions from zero. Data with significantly different degrees of target polarization would mean merging data with different $\phi$ offsets.}) combining data sets with significantly different degrees of target polarization would produce unwanted systematics in the extraction of G and $\Sigma$. Therefore we analyze the different target polarization settings separately. 
 
   
 \subsubsection{Dependence of G and \texorpdfstring{$\Sigma$}{Sigma} extraction on the  statistics of the W, theta bin}\label{sec:G_Sigma_sys}
@@ -230,7 +229,7 @@ The extraction of G and $\Sigma$ from the data is correlated and our simulation 
 The averaged systematic correction was then plotted for the same number of events as the data in the experimental bins (see Fig. \ref{fig:sys_correction_100} for an example). For each calculated value of G and $\Sigma$, an interpolated systematic correction for a given statistics in the bin was calculated (See Fig. \ref{fig:calc_sys_correction}). 
 This procedure was carried out over the full range of sample sizes per $W$, $cos(\theta_{CM})$ (the sample sizes were chosen to cover the ranges seen in the experimental data, corresponding to statistics up to 3000 events). Interpolating between these data allowed the correction to be evaluated for any G,$\Sigma$,$N_{Ev}$ combination. The correction was evaluated bin-by-bin and applied to the extracted results for G and $\Sigma$ from the experimental data.  \\
 A full picture of the systematic correction for G and $\Sigma$ obtained from the simulation is shown in the appendix (see chapters \ref{app:G_syscorr} and \ref{app:Sigma_syscorr}). It is interesting to see how the correction changes sign and increases rapidly in magnitude when the statistic of the events goes below a certain threshold. To avoid the large resulting systematic corrections in these low statistic regions, the statistics at each bins was kept, where possible, with counts above 3000. Where this was not possible, and the statistic was below 3000 events, the systematic correction was applied . 
-Similar bin statistical effects were observed and correction were applied when extracting $\Sigma$ from CLAS data (e.g. \cite{Zacha_2017}). The existence of the effect in this case was put down to binning effects in the data. Similar effects are expected in our case with the addded correlation of the contemporary extraction of G and $\Sigma$.
+Similar bin statistical effects were observed and correction were applied when extracting $\Sigma$ from CLAS data (e.g. \cite{Zacha_2017}). The existence of the effect in this case was put down to binning effects in the data. Similar effects are expected in our case with the added correlation of the contemporary extraction of G and $\Sigma$.
 \begin{table}
   \begin{center}
     \begin{tabular}{ ||c|c|c|c|c|c|c|c|c|c|c|c|c|c||}
@@ -244,7 +243,7 @@ Similar bin statistical effects were observed and correction were applied when e
       \hline
     \end{tabular}
   \end{center}
-  \caption{Number of events simulated for each combination of G and $\Sigma$ in order to get a full evaluation of the systematic correction dependence as a function of the statistic avaliable at each $W$,$cos(\theta_{CM})$ bin}
+  \caption{Number of events simulated for each combination of G and $\Sigma$ in order to get a full evaluation of the systematic correction dependence as a function of the statistic available at each $W$,$cos(\theta_{CM})$ bin}
   \label{table:sim_nevents}
 \end{table}
 
@@ -265,10 +264,10 @@ Similar bin statistical effects were observed and correction were applied when e
 \end{figure}
 
 \subsubsection{Weighting while filling the histograms} \label{sec:weighthisto}
-Two different ways of filling the $\phi_{\pi^+}$ distribution histograms before fitting to extract G and Sigma were explored. Two metods were studied:
+Two different ways of filling the $\phi_{\pi^+}$ distribution histograms before fitting to extract G and Sigma were explored. Two methods were studied:
 \begin{enumerate}
-\item the average photon polarisation for the bin is evaluated and applied to the extracted G, $\Sigma$, 
-\item  a weighting method where the polarisation is accounted for event by event.
+\item the average photon polarization for the bin is evaluated and applied to the extracted G, $\Sigma$, 
+\item  a weighting method where the polarization is accounted for event by event.
 \end{enumerate}
  The filling of the histograms with a weight of $(1/P_{\gamma})$ was tested in order to try to normalize the weight of different events with different Photon polarization  $P_{\gamma}$, considering also the associated error in the extracted value of the Polarization. Results were compared for different statistics, and method 2 (weighted version) gave more stable results, giving less fluctuations in response to changes in the statistics within the bin. \\
 In order to propagate the error correctly while filling the histogram with the weight of $(1/P_{\gamma})$, the default method in ROOT was modified, since it does not consider an error carried by the weight.
@@ -292,7 +291,7 @@ N_{\parallel -} = A_{NORM} \left(\frac{1}{P_{\gamma \parallel}} + \Sigma cos(2(\
 N_{\perp +} = A_{NORM} \left( \frac{1}{P_{\gamma \perp}} - \Sigma cos(2(\phi-\phi_0)) -  P_{+z\perp} G sin(2(\phi-\phi_0)) \right) \label{eq:UN3}\\
 N_{\perp -} = A_{NORM} \left( \frac{1}{P_{\gamma \perp}} - \Sigma cos(2(\phi-\phi_0)) +  P_{-z\perp} G sin(2(\phi-\phi_0)) \right) \label{eq:UN4}\\
 \end{eqnarray}
-In order to remove the remaining effects due to acceptance and to allow the simultaneus extraction of G and $\Sigma$ combining the statistics from the PARA and PERP measurements, an asymmetry was constructed, $A(\phi)$ (shown below for the case of positive target polarization $P_{+z}$),
+In order to remove the remaining effects due to acceptance and to allow the simultaneous extraction of G and $\Sigma$ combining the statistics from the PARA and PERP measurements, an asymmetry was constructed, $A(\phi)$ (shown below for the case of positive target polarization $P_{+z}$),
 \begin{equation}
   A(\phi)_+ = \frac{N_{\parallel +} - N_{\perp +}}{N_{\parallel +} + N_{\perp +}} = \frac{ (\frac{1}{P_{\gamma \parallel}} - \frac{1}{P_{\gamma \perp}}) + 2 \Sigma cos(2(\phi-\phi_0)) +  (P_{+z\parallel}+P_{+z\perp}) G sin(2(\phi-\phi_0))}{(\frac{1}{P_{\gamma \parallel}} + \frac{1}{P_{\gamma \perp}}) +(P_{+z\parallel}-P_{+z\perp}) G sin(2(\phi-\phi_0))} \label{eq:A1}
 \end{equation}
@@ -326,7 +325,7 @@ A fitted function was used in order to extract the values (after testing that $\
     \textnormal{where:} \, D_F & =   \textnormal{Dilution Factor} \\
     \bar{p_z} & =  \frac{P_{+z\parallel}+P_{+z\perp}}{2}
 \end{align}
-The results are obtained (See for example Fig. \ref{fig:GTgpol}) separately for both target polarisations. These gave statistically consistent results (See appendix at \ref{app:G_TGPOL} and at \ref{app:Sigma_TGPOL}). The final results come from a weighted average of the G or $\Sigma$ extracted from the two target polarizations. These results are presented in the next chapter.
+The results are obtained (See for example Fig. \ref{fig:GTgpol}) separately for both target polarizations. These gave statistically consistent results (See appendix at \ref{app:G_TGPOL} and at \ref{app:Sigma_TGPOL}). The final results come from a weighted average of the G or $\Sigma$ extracted from the two target polarizations. These results are presented in the next chapter.
 
 
 
