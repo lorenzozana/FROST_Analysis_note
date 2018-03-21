@@ -59,7 +59,7 @@
  top=20mm,
  }
 
-
+\usepackage{lineno}
 
 
 \begin{document}
@@ -89,12 +89,13 @@
 
 
 \tableofcontents
-
-\include{introduction}
-\include{experiment}
-\include{analysis}
-\include{extractionG}
-\include{results}
+\begin{linenumbers}
+  \include{introduction}
+  \include{experiment}
+  \include{analysis}
+  \include{extractionG}
+  \include{results}
+\end{linenumbers}
 \include{appendix}
 
 
