@@ -5,7 +5,7 @@
 \label{app:G_TGPOL}
 The value of G is extracted independently from different target polarizations (positive (GREEN)  and negative (BLUE) ). Results are compared in order to investigate possible systematic difference between the two sets. Here are plotted vs $E_{CMS}$(W) for different $cos(\theta_{CM})$ bins. \begin{figure}[htb]
   \begin{center}
-    \subfloat[][ $ -1 \leq cos(\theta_{CM})<-0.8$ ] {
+    \subfloat[][ $ -0.94 \leq cos(\theta_{CM})<-0.8$ ] {
       \includegraphics[height=0.40\textwidth]{figures/G_plots/comp_TGPOL_system_0.png} 
       \label{fig:GvsW_TGPOL_theta1}
     }
@@ -51,7 +51,7 @@ The value of G is extracted independently from different target polarizations (p
       \includegraphics[height=0.40\textwidth]{figures/G_plots/comp_TGPOL_system_8.png}
       \label{fig:GvsW_TGPOL_theta9}
     }
-    \subfloat[][ $ 0.8 \leq cos(\theta_{CM})<1.0$ ] {
+    \subfloat[][ $ 0.8 \leq cos(\theta_{CM})<0.95$ ] {
       \includegraphics[height=0.40\textwidth]{figures/G_plots/comp_TGPOL_system_9.png}
       \label{fig:GvsW_TGPOL_theta10}
     }
@@ -63,20 +63,25 @@ The value of G is extracted independently from different target polarizations (p
 
 \section{\texorpdfstring{$\Sigma$}{Sigma} vs \texorpdfstring{$E_{CMS}$}{E-CMS} for different \texorpdfstring{$cos(\theta)$}{cos(theta)} bins and different Target polarization}
 \label{app:Sigma_TGPOL}
-The value of $\Sigma$ is extracted independently from different target polarizations (positive (GREEN)  and negative (BLUE) ) and from an unpolarized target ($CH_2$ (BLACK), which is present in the same beamline (see Fig. \ref{fig:target_draw} at page \pageref{fig:target_draw})). In the case of the unpolarized $CH_2$ target, the extraction of $\Sigma$ is simplified, since one parameter (C in Eq. \ref{eqn:sigma_param}) is set to zero in case of $P_z=0$ (see chapter \ref{ch:extract_G_S} for further details), and the updated equation becomes eq. \ref{eq:sigma_param_CH2}. 
+The value of $\Sigma$ is extracted independently from different target polarizations (positive (GREEN)  and negative (BLUE) ), from an unpolarized target ($CH_2$ (BLACK) and C target  which is present in the same beamline (see Fig. \ref{fig:target_draw} at page \pageref{fig:target_draw})). In the case of the unpolarized $CH_2$ and C targets, the extraction of $\Sigma$ is simplified, since one parameter (C in Eq. \ref{eqn:sigma_param}) is set to zero in case of $P_z=0$ (see chapter \ref{ch:extract_G_S} for further details), and the updated equation becomes eq. \ref{eq:sigma_param_CH2}. 
 \begin{align}
   f(\phi) & = A + B cos(2(\phi-\phi_0)) + C sin(2(\phi-\phi_0)) & POLARIZED\, TARGET \label{eqn:sigma_param}\\
-   f(\phi) & = A + B cos(2(\phi-\phi_0))  & UNPOLARIZED\, TARGET (CH_2) \label{eq:sigma_param_CH2}\\
-   \Sigma & = \frac{B}{D_F \, \bar{p}} & \\
-   \textnormal{where:} \, D_F & =   \textnormal{Dilution Factor} & \\
-    \frac{2}{\bar{p}} & = \left(\frac{1}{P_{\gamma \parallel}} + \frac{1}{P_{\gamma \perp}}\right) &
+   f(\phi) & = A + B cos(2(\phi-\phi_0))  & UNPOLARIZED\, TARGET (CH_2 , C) \label{eq:sigma_param_CH2}\\
+   \Sigma & = B & \\
+\end{align}
+In order to extract the corrected value of $\Sigma$ for Hydrogen one will need to take into account the contribution to the measured value for Butanol ($\Sigma_B$) and $CH_2$ ($\Sigma_{CH_2}$) from both Carbon $\Sigma_C$ and Hydrogen $\Sigma_H$.
+\begin{align}
+  \Sigma_B & = a \Sigma_C + b \Sigma_H  & \text{where:} \, a= (1-D_F) \,\text{, and:} \, b= D_F \label{eqn:sigma_calc_1}\\
+  \Sigma_H & = \frac{\Sigma_B - (1-D_F)\Sigma_C}{D_F} = \Sigma_C + \frac{\Sigma_B - \Sigma_C}{D_F} & \text{for Butanol (POS and NEG)} \label{eq:sigma_calc_2}\\
+  \Sigma_H & = \frac{\Sigma_{CH2} - (1-D_F)\Sigma_C}{D_F} = \Sigma_C + \frac{\Sigma_{CH2} - \Sigma_C}{D_F} & \text{for }CH_2 \label{eq:sigma_calc_3}\\ 
 \end{align}
 The use of considering a parallel measurement with 2 polarized settings and an unpolarized target is to investigate possible systematic difference between the sets (positive and negative target polarization) and rule out possible effects of correlation in the contemporary extraction of G and $\Sigma$ (positive target polarization vs $CH_2$ and negative target polarization vs $CH_2$). \\
- Here are plotted vs $E_{CMS}$(W) for different $cos(\theta_{CM})$ bins. Together with the data are plotted current MAID2007 \cite{MAID_2007} (blue line)  and SAID(CM12) \cite{PhysRevC.86.015202} (red line) predictions.
+ Here are plotted vs $E_{CMS}$(W) for different $cos(\theta_{CM})$ bins. Together with the data are plotted current MAID2007 \cite{MAID_2007} (blue line), SAID(MA17) \cite{PhysRevC.96.035204} (red line) and J$\ddot{u}$lich-Bonn(RO18) \cite{Ronchen:2018ury} (green line) predictions.
+The extracted value of $\Sigma$ for Hydrogen is then compared to existing experimental results that cover the same angle and energy range (from reference \cite{AJ00},\cite{KE74},\cite{BA02},\cite{DU13},\cite{HM80},\cite{BS79},\cite{AS72},\cite{AB80},\cite{AB74}). Since the binning in angle is not exactly the same as this data-set, the value of the centroid range for each data-set is reported in the legend of each plot. 
 
 \begin{figure}[htb]
   \begin{center}
-    \subfloat[][ $ -1 \leq cos(\theta_{CM})<-0.8$ ] {
+    \subfloat[][ $ -0.94 \leq cos(\theta_{CM})<-0.8$ ] {
       \includegraphics[height=0.40\textwidth]{figures/G_plots/comp_SIGMA_TGPOL_system_0.png} 
       \label{fig:GvsW_SIGMA_TGPOL_theta1}
     }
@@ -122,13 +127,68 @@ The use of considering a parallel measurement with 2 polarized settings and an u
       \includegraphics[height=0.40\textwidth]{figures/G_plots/comp_SIGMA_TGPOL_system_8.png}
       \label{fig:GvsW_SIGMA_TGPOL_theta9}
     }
-    \subfloat[][ $ 0.8 \leq cos(\theta_{CM})<1.0$ ] {
+    \subfloat[][ $ 0.8 \leq cos(\theta_{CM})<0.95$ ] {
       \includegraphics[height=0.40\textwidth]{figures/G_plots/comp_SIGMA_TGPOL_system_9.png}
       \label{fig:GvsW_SIGMA_TGPOL_theta10}
     }
   \end{center}
 \end{figure}
 
+
+\begin{figure}[htb]
+  \begin{center}
+    \subfloat[][ $ -0.94 \leq cos(\theta_{CM})<-0.8$ ] {
+      \includegraphics[height=0.40\textwidth]{figures/G_plots/comp_SIGMA_exp_system_0.png} 
+      \label{fig:GvsW_SIGMA_exp_theta1}
+    }
+    \subfloat[][ $ -0.8 \leq cos(\theta_{CM})<-0.6$ ] {
+      \includegraphics[height=0.40\textwidth]{figures/G_plots/comp_SIGMA_exp_system_1.png}
+    \label{fig:GvsW_SIGMA_exp_theta2}
+    } \\
+    \subfloat[][ $ -0.6 \leq cos(\theta_{CM})<-0.4$ ] {
+    \includegraphics[height=0.40\textwidth]{figures/G_plots/comp_SIGMA_exp_system_2.png}
+    \label{fig:GvsW_SIGMA_exp_theta3}
+    }
+    \subfloat[][ $ -0.4 \leq cos(\theta_{CM})<-0.2$ ] {
+      \includegraphics[height=0.40\textwidth]{figures/G_plots/comp_SIGMA_exp_system_3.png}
+      \label{fig:GvsW_SIGMA_exp_theta4}
+    }
+  \end{center}
+\end{figure}
+\begin{figure}[htb]
+\ContinuedFloat
+  \begin{center} 
+    \subfloat[][ $ -0.2 \leq cos(\theta_{CM})<0.0$ ] {
+      \includegraphics[height=0.40\textwidth]{figures/G_plots/comp_SIGMA_exp_system_4.png}
+      \label{fig:GvsW_SIGMA_exp_theta5}
+    }
+    \subfloat[][ $ 0.0 \leq cos(\theta_{CM})<0.2$ ] {
+      \includegraphics[height=0.40\textwidth]{figures/G_plots/comp_SIGMA_exp_system_5.png}
+      \label{fig:GvsW_SIGMA_exp_theta6}
+    } \\    
+    \subfloat[][ $ 0.2 \leq cos(\theta_{CM})<0.4$ ] {
+      \includegraphics[height=0.40\textwidth]{figures/G_plots/comp_SIGMA_exp_system_6.png}
+      \label{fig:GvsW_SIGMA_exp_theta7}
+    }
+    \subfloat[][ $ 0.4 \leq cos(\theta_{CM})<0.6$ ] {
+      \includegraphics[height=0.40\textwidth]{figures/G_plots/comp_SIGMA_exp_system_7.png}
+      \label{fig:GvsW_SIGMA_exp_theta8}
+    }
+  \end{center}
+\end{figure}
+\begin{figure}[htb]
+\ContinuedFloat
+  \begin{center} 
+    \subfloat[][ $ 0.6 \leq cos(\theta_{CM})<0.8$ ] {
+      \includegraphics[height=0.40\textwidth]{figures/G_plots/comp_SIGMA_exp_system_8.png}
+      \label{fig:GvsW_SIGMA_exp_theta9}
+    }
+    \subfloat[][ $ 0.8 \leq cos(\theta_{CM})<0.95$ ] {
+      \includegraphics[height=0.40\textwidth]{figures/G_plots/comp_SIGMA_exp_system_9.png}
+      \label{fig:GvsW_SIGMA_exp_theta10}
+    }
+  \end{center}
+\end{figure}
 
 \clearpage
 \newpage
@@ -137,7 +197,7 @@ The use of considering a parallel measurement with 2 polarized settings and an u
  Photon polarization for the different bins in $E_{CMS}$ and $cos(\theta_{CM})$ where we extracted G and $\Sigma$ are plotted for different Target polarizations (positive (GREEN) and negative (BLUE)). The first point for negative Polarization in bin 1 showed a Polarization below the threshold of 50\% and wasn't used in the extraction (This particular set was missing part of the photon polarization information, inducing the use of integrated Polarization values (and not weighted $\phi$ distributions). This method is described in section \ref{sec:weighthisto}).
 \begin{figure}[htb]
   \begin{center}
-    \subfloat[][ $ -1 \leq cos(\theta_{CM})<-0.8$ ] {
+    \subfloat[][ $ -0.94 \leq cos(\theta_{CM})<-0.8$ ] {
       \includegraphics[height=0.40\textwidth]{figures/G_plots/comp_GP_TGPOL_system_0.png} 
       \label{fig:GvsW_GP_TGPOL_theta1}
     }
@@ -183,12 +243,13 @@ The use of considering a parallel measurement with 2 polarized settings and an u
       \includegraphics[height=0.40\textwidth]{figures/G_plots/comp_GP_TGPOL_system_8.png}
       \label{fig:GvsW_GP_TGPOL_theta9}
     }
-    \subfloat[][ $ 0.8 \leq cos(\theta_{CM})<1.0$ ] {
+    \subfloat[][ $ 0.8 \leq cos(\theta_{CM})<0.95$ ] {
       \includegraphics[height=0.40\textwidth]{figures/G_plots/comp_GP_TGPOL_system_9.png}
       \label{fig:GvsW_GP_TGPOL_theta10}
     }
   \end{center}
 \end{figure}
+
 
 
 \clearpage
@@ -199,7 +260,7 @@ The use of considering a parallel measurement with 2 polarized settings and an u
 The Dilution Factor is plotted  for the different bins in $E_{CMS}$ and $cos(\theta_{CM})$ where we extracted G and $\Sigma$. A full explanation of the extraction method and the plots is shown in chapter \ref{ch:dil_factor}. Highlighted in different colors are shown the 3 different electron beam energies used in this data-set. Different beam energies corresponded to different photon resolution and we expected a difference in the calculated dilution factor. For these reason, the 3 settings were threated differently. 
 \begin{figure}[htb]
   \begin{center}
-    \subfloat[][ $ -1 \leq cos(\theta_{CM})<-0.8$ ] {
+    \subfloat[][ $ -0.94 \leq cos(\theta_{CM})<-0.8$ ] {
       \includegraphics[height=0.40\textwidth]{figures/G_plots/comp_DF_TGPOL_system_0.png} 
       \label{fig:GvsW_DF_TGPOL_theta1}
     }
@@ -245,7 +306,7 @@ The Dilution Factor is plotted  for the different bins in $E_{CMS}$ and $cos(\th
       \includegraphics[height=0.40\textwidth]{figures/G_plots/comp_DF_TGPOL_system_8.png}
       \label{fig:GvsW_DF_TGPOL_theta9}
     }
-    \subfloat[][ $ 0.8 \leq cos(\theta_{CM})<1.0$ ] {
+    \subfloat[][ $ 0.8 \leq cos(\theta_{CM})<0.95$ ] {
       \includegraphics[height=0.40\textwidth]{figures/G_plots/comp_DF_TGPOL_system_9.png}
       \label{fig:GvsW_DF_TGPOL_theta10}
     }
@@ -260,7 +321,7 @@ The Dilution Factor is plotted  for the different bins in $E_{CMS}$ and $cos(\th
 Target polarization is plotted vs $E_{CMS}$(W) for different $cos(\theta_{CM})$ bins. The different Target polarizations for each W and $cos(\theta)$ bin analyzed are plotted as the colored markers. Negative polarization data is shown in blue and positive polarization in green. The shaded areas represent the different coherent edge settings in the experiment. 
 \begin{figure}[htb]
   \begin{center}
-    \subfloat[][ $ -1 \leq cos(\theta_{CM})<-0.8$ ] {
+    \subfloat[][ $ -0.94 \leq cos(\theta_{CM})<-0.8$ ] {
       \includegraphics[height=0.40\textwidth]{figures/G_plots/comp_TG_TGPOL_system_0.png} 
       \label{fig:GvsW_TG_TGPOL_theta1}
     }
@@ -306,7 +367,7 @@ Target polarization is plotted vs $E_{CMS}$(W) for different $cos(\theta_{CM})$ 
       \includegraphics[height=0.40\textwidth]{figures/G_plots/comp_TG_TGPOL_system_8.png}
       \label{fig:GvsW_TG_TGPOL_theta9}
     }
-    \subfloat[][ $ 0.8 \leq cos(\theta_{CM})<1.0$ ] {
+    \subfloat[][ $ 0.8 \leq cos(\theta_{CM})<0.95$ ] {
       \includegraphics[height=0.40\textwidth]{figures/G_plots/comp_TG_TGPOL_system_9.png}
       \label{fig:GvsW_TG_TGPOL_theta10}
     }
